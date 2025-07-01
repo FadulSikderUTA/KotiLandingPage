@@ -105,10 +105,7 @@ export default function BusinessSolutionsContent({
             data-oid="af:-4fr"
           >
             <div className="w-full max-w-4xl" data-oid="rrtg1o8">
-              <div
-                className="flex bg-white rounded-2xl overflow-hidden shadow-xl gap-0"
-                data-oid="w3v0s9f"
-              >
+              <div className="flex gap-4" data-oid="w3v0s9f">
                 <div className="flex-1" data-oid="t6r_vnt">
                   <FinancialEducationCard lang={lang} data-oid="zc6pza." />
                 </div>
