@@ -46,44 +46,44 @@ export default function AnalyticsPlatformCard({
   const data = content[lang];
 
   const AnalyticsMockup = () => (
-    <div className="bg-white rounded-lg p-4 shadow-inner" data-oid="1:cd7ch">
+    <div className="bg-white rounded-lg p-4 shadow-inner" data-oid="qib.gsb">
       <div
         className="flex justify-between items-center mb-4"
-        data-oid="ydme300"
+        data-oid="36apim3"
       >
-        <div className="text-sm font-semibold text-gray-600" data-oid="s91.cd:">
+        <div className="text-sm font-semibold text-gray-600" data-oid="lr8w5p.">
           Growth Metrics
         </div>
         <div
           className="text-xs text-green-600 font-semibold"
-          data-oid="p2152kf"
+          data-oid="1-66tyk"
         >
           +15%
         </div>
       </div>
       <div
         className="h-32 bg-gray-100 rounded-lg flex items-end p-2"
-        data-oid="i2jospo"
+        data-oid="rgvw-qx"
       >
         <div
           className="bg-gradient-to-t from-green-400 to-green-600 rounded-t-md w-1/4"
           style={{ height: "60%" }}
-          data-oid="_e6xz9f"
+          data-oid="sa1h5ri"
         ></div>
         <div
           className="bg-gradient-to-t from-green-400 to-green-600 rounded-t-md w-1/4"
           style={{ height: "80%" }}
-          data-oid="h20b-49"
+          data-oid="m-.h04t"
         ></div>
         <div
           className="bg-gradient-to-t from-green-400 to-green-600 rounded-t-md w-1/4"
           style={{ height: "50%" }}
-          data-oid="7mrlqqh"
+          data-oid="j9mmitc"
         ></div>
         <div
           className="bg-gradient-to-t from-green-400 to-green-600 rounded-t-md w-1/4"
           style={{ height: "70%" }}
-          data-oid="qh.32yv"
+          data-oid="vki-t4g"
         ></div>
       </div>
     </div>
@@ -91,15 +91,15 @@ export default function AnalyticsPlatformCard({
 
   return (
     <BusinessSolutionCard
-      icon={<BarChart size={32} color="white" data-oid=".nod:uu" />}
+      icon={<BarChart size={32} color="white" data-oid="l6.y0.r" />}
       category={data.category}
       title={data.title}
       description={data.description}
       features={data.features}
-      mockup={<AnalyticsMockup data-oid="-9lp_2l" />}
+      mockup={<AnalyticsMockup data-oid="mkpkak2" />}
       cta={data.cta}
       lang={lang}
-      data-oid="73ylmvo"
+      data-oid="xta42ij"
     />
   );
 }

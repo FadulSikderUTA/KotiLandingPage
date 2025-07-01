@@ -38,18 +38,18 @@ export default function SmokeTestPage() {
   return (
     <div
       className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-10"
-      data-oid="nvzs:2a"
+      data-oid="avsr.z7"
     >
-      <h1 className="text-4xl font-bold mb-8" data-oid="3o2v1:0">
+      <h1 className="text-4xl font-bold mb-8" data-oid="j:b4lot">
         Koti Smoke Test
       </h1>
 
       <div
         className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl"
-        data-oid="eblmirz"
+        data-oid="u5c2ob-"
       >
-        <div className="bg-gray-800 p-6 rounded-lg" data-oid="chi9x2k">
-          <h2 className="text-2xl font-semibold mb-4" data-oid="6ul908t">
+        <div className="bg-gray-800 p-6 rounded-lg" data-oid="k8oc.zq">
+          <h2 className="text-2xl font-semibold mb-4" data-oid="9wwcjdf">
             Framer Motion
           </h2>
           <motion.div
@@ -57,31 +57,31 @@ export default function SmokeTestPage() {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            data-oid="bg.fjvb"
+            data-oid="ijbyvly"
           >
-            <p className="text-white" data-oid=".3md.i2">
+            <p className="text-white" data-oid="gu0akyj">
               Animate!
             </p>
           </motion.div>
         </div>
 
-        <div className="bg-gray-800 p-6 rounded-lg" data-oid="zb5h2h.">
-          <h2 className="text-2xl font-semibold mb-4" data-oid="1ddd_:c">
+        <div className="bg-gray-800 p-6 rounded-lg" data-oid="zld5cpl">
+          <h2 className="text-2xl font-semibold mb-4" data-oid="f8md12c">
             Swiper Carousel
           </h2>
-          <Swiper spaceBetween={50} slidesPerView={1} data-oid="z4jxfbn">
-            <SwiperSlide data-oid="vif7dj7">
+          <Swiper spaceBetween={50} slidesPerView={1} data-oid=":ad_qjx">
+            <SwiperSlide data-oid="ciw7581">
               <div
                 className="bg-blue-500 h-32 flex items-center justify-center rounded-lg"
-                data-oid="vgt4-gt"
+                data-oid="f61dbbc"
               >
                 Slide 1
               </div>
             </SwiperSlide>
-            <SwiperSlide data-oid="dfd4nec">
+            <SwiperSlide data-oid="xfc973i">
               <div
                 className="bg-purple-500 h-32 flex items-center justify-center rounded-lg"
-                data-oid="aso0a31"
+                data-oid="4nwob6m"
               >
                 Slide 2
               </div>
@@ -89,30 +89,30 @@ export default function SmokeTestPage() {
           </Swiper>
         </div>
 
-        <div className="bg-gray-800 p-6 rounded-lg" data-oid="wqvh03b">
-          <h2 className="text-2xl font-semibold mb-4" data-oid="mtfw6on">
+        <div className="bg-gray-800 p-6 rounded-lg" data-oid="ihi7gc6">
+          <h2 className="text-2xl font-semibold mb-4" data-oid="hu9:lx8">
             Lucide React Icon
           </h2>
-          <Home className="w-16 h-16 text-yellow-500" data-oid="_s0zj0." />
+          <Home className="w-16 h-16 text-yellow-500" data-oid="_d3phdz" />
         </div>
 
-        <div className="bg-gray-800 p-6 rounded-lg" data-oid="nhd6_xg">
-          <h2 className="text-2xl font-semibold mb-4" data-oid="wtve5oh">
+        <div className="bg-gray-800 p-6 rounded-lg" data-oid="e7zl:f8">
+          <h2 className="text-2xl font-semibold mb-4" data-oid="7aapmhc">
             Chart.js
           </h2>
-          <div className="w-48 h-48" data-oid="0rgoe:x">
-            <Doughnut data={data} data-oid="he.g71p" />
+          <div className="w-48 h-48" data-oid="n0o.97q">
+            <Doughnut data={data} data-oid="040x-7-" />
           </div>
         </div>
 
         <div
           className="bg-gray-800 p-6 rounded-lg md:col-span-2"
-          data-oid="2_-lno5"
+          data-oid="i6foyhw"
         >
-          <h2 className="text-2xl font-semibold mb-4" data-oid="m0jq6:r">
+          <h2 className="text-2xl font-semibold mb-4" data-oid="9fzqefh">
             Shadcn/UI Button
           </h2>
-          <Button data-oid="6bdy:8a">Shadcn Button</Button>
+          <Button data-oid="r1nz:7i">Shadcn Button</Button>
         </div>
       </div>
     </div>

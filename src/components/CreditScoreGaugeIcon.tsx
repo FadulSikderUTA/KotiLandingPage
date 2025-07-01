@@ -23,27 +23,27 @@ const CreditScoreGaugeIcon = ({
       height={size}
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
-      data-oid="442v:ww"
+      data-oid="6kbtjkp"
     >
       {/* Define gradient for the gauge */}
-      <defs data-oid="m7pxe5u">
+      <defs data-oid="-qbe8rn">
         <linearGradient
           id="gaugeGradient"
           x1="0%"
           y1="0%"
           x2="100%"
           y2="0%"
-          data-oid="krmnw_3"
+          data-oid="9r7_vdu"
         >
-          <stop offset="0%" stopColor="#ef4444" data-oid="o9uwtj1" />{" "}
+          <stop offset="0%" stopColor="#ef4444" data-oid="l8fjule" />{" "}
           {/* red-500 */}
-          <stop offset="25%" stopColor="#fb923c" data-oid="dc06epl" />{" "}
+          <stop offset="25%" stopColor="#fb923c" data-oid="4nexf99" />{" "}
           {/* orange-400 */}
-          <stop offset="50%" stopColor="#facc15" data-oid="-za_ny2" />{" "}
+          <stop offset="50%" stopColor="#facc15" data-oid="tyvur7e" />{" "}
           {/* yellow-400 */}
-          <stop offset="75%" stopColor="#a3e635" data-oid="133vkrr" />{" "}
+          <stop offset="75%" stopColor="#a3e635" data-oid="2z_iv8x" />{" "}
           {/* lime-400 */}
-          <stop offset="100%" stopColor="#22c55e" data-oid="u8u65is" />{" "}
+          <stop offset="100%" stopColor="#22c55e" data-oid="5qzb_r9" />{" "}
           {/* green-500 */}
         </linearGradient>
 
@@ -54,14 +54,14 @@ const CreditScoreGaugeIcon = ({
           y="-50%"
           width="200%"
           height="200%"
-          data-oid="9y:xmon"
+          data-oid="e.-t6dr"
         >
           <feDropShadow
             dx="0"
             dy="1"
             stdDeviation="2"
             floodOpacity="0.2"
-            data-oid="5ttmg9e"
+            data-oid="jvbmqcq"
           />
         </filter>
       </defs>
@@ -73,7 +73,7 @@ const CreditScoreGaugeIcon = ({
         stroke="#e5e7eb"
         strokeWidth="12"
         strokeLinecap="round"
-        data-oid="-_wbqty"
+        data-oid="2noofvi"
       />
 
       {/* Colored gauge arc */}
@@ -83,7 +83,7 @@ const CreditScoreGaugeIcon = ({
         stroke="url(#gaugeGradient)"
         strokeWidth="10"
         strokeLinecap="round"
-        data-oid="6sj5pvw"
+        data-oid="t82.k_y"
       />
 
       {/* Gauge segments (optional decorative marks) */}
@@ -103,7 +103,7 @@ const CreditScoreGaugeIcon = ({
             y2={y2}
             stroke="#9ca3af"
             strokeWidth="1.5"
-            data-oid="su4m4sn"
+            data-oid="38:0wjx"
           />
         );
       })}
@@ -115,24 +115,24 @@ const CreditScoreGaugeIcon = ({
         r="6"
         fill="#1f2937"
         filter="url(#shadow)"
-        data-oid="1idin82"
+        data-oid="s1mdlxn"
       />
 
       {/* Needle */}
-      <g transform={`rotate(${needleRotation} 50 70)`} data-oid="o19v4a:">
+      <g transform={`rotate(${needleRotation} 50 70)`} data-oid="nkcv582">
         <path
           d="M 50 70 L 48 68 L 48 40 L 50 38 L 52 40 L 52 68 Z"
           fill="#1f2937"
           filter="url(#shadow)"
-          data-oid="9irytu6"
+          data-oid="xi:7hy8"
         />
 
         {/* Needle tip highlight */}
-        <circle cx="50" cy="38" r="2" fill="#6dbb00" data-oid="0qyq8hm" />
+        <circle cx="50" cy="38" r="2" fill="#6dbb00" data-oid="0415zm." />
       </g>
 
       {/* Center dot */}
-      <circle cx="50" cy="70" r="4" fill="#6dbb00" data-oid="x-784gd" />
+      <circle cx="50" cy="70" r="4" fill="#6dbb00" data-oid="f.7a__u" />
     </svg>
   );
 };

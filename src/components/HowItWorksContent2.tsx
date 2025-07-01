@@ -334,13 +334,13 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
   /* ------------------------------------------------------------------ */
 
   const CarouselDots = ({ items, currentIndex, onDotClick }: any) => (
-    <div className="mt-6 flex justify-center gap-2" data-oid="x7sgh05">
+    <div className="mt-6 flex justify-center gap-2" data-oid="bbdo:ur">
       {items.map((_: any, idx: number) => (
         <button
           key={idx}
           onClick={() => onDotClick(idx)}
           className={`w-3 h-3 rounded-full transition-all ${idx === currentIndex ? "bg-[#6dbb00] scale-125" : "bg-gray-300 hover:bg-gray-400"}`}
-          data-oid="x24c25b"
+          data-oid="8bv.kn6"
         />
       ))}
     </div>
@@ -451,9 +451,9 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
     return (
       <div
         className="relative w-full h-96 flex items-center justify-center overflow-hidden"
-        data-oid="52d5tqk"
+        data-oid="h63_nv4"
       >
-        <AnimatePresence initial={false} data-oid="9p_nxkq">
+        <AnimatePresence initial={false} data-oid="8qpgk_h">
           {cards.map((card: any, index: number) => {
             const offset = (index - currentIndex + totalCards) % totalCards;
             const isVisible = offset <= 1 || offset >= totalCards - 1;
@@ -499,7 +499,7 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
                     ? { scale: offset === 0 ? 1.05 : 0.85 }
                     : {}
                 }
-                data-oid=":3xx1:o"
+                data-oid="tv03p-5"
               >
                 <Card
                   card={card}
@@ -507,7 +507,7 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
                   lang={lang}
                   showPoints={showPoints}
                   isDragging={isDragging && offset === 0}
-                  data-oid="gpdew.z"
+                  data-oid="d6zb2yj"
                 />
               </motion.div>
             );
@@ -527,7 +527,7 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
     return (
       <div
         className={`relative w-72 h-96 rounded-2xl overflow-hidden shadow-xl cursor-pointer ${isDragging ? "shadow-2xl" : ""}`}
-        data-oid="a.t197u"
+        data-oid="st_drj2"
       >
         {/* background */}
         <motion.div
@@ -541,14 +541,15 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
               : "0 10px 25px -5px rgba(0, 0, 0, 0.3)",
           }}
           transition={{ duration: 0.6 }}
-          data-oid="-zhg5:i"
+          data-oid="s1338mo"
         />
 
         {/* overlay */}
         <div
           className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"
-          data-oid="cg70cni"
+          data-oid="_-oco3q"
         />
+
         {/* Enhanced glow effect during drag */}
         {isDragging && (
           <motion.div
@@ -556,11 +557,11 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2 }}
-            data-oid="jlxmbk1"
+            data-oid="mbjawb2"
           />
         )}
         {/* content */}
-        <div className="absolute inset-x-0 bottom-0 p-4" data-oid="qti:xx:">
+        <div className="absolute inset-x-0 bottom-0 p-4" data-oid="h2n9nk.">
           <motion.div
             className="bg-black/70 backdrop-blur-md rounded-xl px-4 py-3"
             animate={{
@@ -570,37 +571,37 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
               scale: isDragging ? 1.05 : 1,
             }}
             transition={{ duration: 0.2 }}
-            data-oid="ma4wwkn"
+            data-oid=".r418.3"
           >
             {/* Main category title */}
             <h3
               className="text-white font-bold text-base mb-2"
-              data-oid="2371nie"
+              data-oid="vulw2ua"
             >
               {card.title}
             </h3>
 
             {/* Credit Score Bar for benefit cards */}
             {card.uses && (
-              <div className="mb-3" data-oid="gb9qtig">
+              <div className="mb-3" data-oid="mmdk_l2">
                 <div
                   className="w-full h-2 bg-gradient-to-r from-red-500 via-orange-400 via-yellow-400 via-lime-400 to-green-500 rounded-full relative"
-                  data-oid="hlnlkpy"
+                  data-oid="b2xcg07"
                 >
                   {/* Score indicator needle - positioned at good score (765 equivalent) */}
                   <div
                     className="absolute top-0 right-2 w-0.5 h-2 bg-white rounded-full shadow-lg"
-                    data-oid="27g-t4a"
+                    data-oid="sxewz.y"
                   ></div>
                 </div>
                 <div
                   className="flex justify-between text-xs text-white/60 mt-1"
-                  data-oid="m5q341y"
+                  data-oid="6aaa5p4"
                 >
-                  <span data-oid="8wqw818">
+                  <span data-oid="l2eg07q">
                     {lang === "bn" ? "৩০০" : "300"}
                   </span>
-                  <span data-oid="0ma6w7k">
+                  <span data-oid="8gw3w3f">
                     {lang === "bn" ? "৮৫০" : "850"}
                   </span>
                 </div>
@@ -609,19 +610,19 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
 
             {/* Activities list for build cards */}
             {card.activities && showPoints ? (
-              <div className="space-y-1" data-oid="x6kgq2j">
+              <div className="space-y-1" data-oid="3lg4xr2">
                 {card.activities.map((activity: any, idx: number) => (
                   <div
                     key={idx}
                     className="flex items-center justify-between"
-                    data-oid="h5kocm9"
+                    data-oid="7ye7v4c"
                   >
-                    <span className="text-white/80 text-xs" data-oid="1dx92sq">
+                    <span className="text-white/80 text-xs" data-oid="-dnkhk7">
                       {activity.description}
                     </span>
                     <span
                       className="bg-[#6dbb00] text-white rounded-full px-2 py-0.5 text-xs font-semibold"
-                      data-oid="dugs0hn"
+                      data-oid="8:lsbyi"
                     >
                       +
                       {lang === "bn"
@@ -633,28 +634,28 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
               </div>
             ) : card.uses ? (
               /* Simplified uses list for benefit cards - just outcomes with colors */
-              <div className="space-y-2" data-oid="fqvtkco">
+              <div className="space-y-2" data-oid="tbmy.10">
                 {card.uses.map((use: any, idx: number) => (
-                  <div key={idx} className="space-y-1" data-oid="knyk9az">
+                  <div key={idx} className="space-y-1" data-oid="_foxdeu">
                     <div
                       className="text-white/90 text-xs font-medium"
-                      data-oid="8ui_zb."
+                      data-oid="ivo4jxj"
                     >
                       {use.description}
                     </div>
                     <div
                       className="flex items-center justify-between text-xs"
-                      data-oid="rpry.bl"
+                      data-oid="9wx3twd"
                     >
                       <span
                         className="text-green-300 font-medium"
-                        data-oid="jg3auh2"
+                        data-oid="w19_v0k"
                       >
                         {use.impact.high}
                       </span>
                       <span
                         className="text-red-300 font-medium"
-                        data-oid="bofb_k8"
+                        data-oid="1sb2662"
                       >
                         {use.impact.low}
                       </span>
@@ -666,15 +667,15 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
               /* Fallback for cards without activities or uses */
               <div
                 className="flex items-center justify-between"
-                data-oid="zeq6dzn"
+                data-oid="g1t_or0"
               >
-                <span className="text-white/80 text-xs" data-oid="cnzg-2g">
+                <span className="text-white/80 text-xs" data-oid=":lyyx2g">
                   {card.description}
                 </span>
                 {showPoints && card.points && (
                   <span
                     className="bg-[#6dbb00] text-white rounded-full px-2 py-0.5 text-xs font-semibold"
-                    data-oid="g-p8h:v"
+                    data-oid="9em2.:j"
                   >
                     +
                     {lang === "bn"
@@ -696,7 +697,7 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
   return (
     <section
       className="relative min-h-screen w-full flex items-center justify-center px-3 py-3 bg-[#fdfdfd] z-20"
-      data-oid="h:jgp7q"
+      data-oid="h18hj1i"
     >
       {/* Card Container - Immediately stacks on top of Hero */}
       <motion.div
@@ -704,21 +705,21 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        data-oid="co32xmq"
+        data-oid="9-3e73v"
       >
         {/* Card Content */}
         <div
           className="relative z-10 h-full flex flex-col items-center py-4 px-4 sm:px-6 lg:px-8 overflow-hidden"
-          data-oid=".lxds-k"
+          data-oid="5nzr45x"
         >
           {/* Main Heading - Yeeld Style */}
-          <div className="text-center mb-8" data-oid="1u:.up_">
+          <div className="text-center mb-8" data-oid="n_yb5-o">
             <motion.h1
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d0d0d] tracking-tight mb-3"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              data-oid="s76yn80"
+              data-oid="qkwmk4q"
             >
               {lang === "bn" ? "আবিষ্কার করুন কোটি" : "DISCOVER KOTI"}
             </motion.h1>
@@ -727,7 +728,7 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              data-oid="81dkm12"
+              data-oid="g.llp-j"
             >
               {lang === "bn"
                 ? "আপনার আর্থিক যাত্রায় স্মার্ট ক্রেডিট স্কোরিং এর শক্তি আবিষ্কার করুন। প্রতিদিনের কাজে স্কোর গড়ুন, অসংখ্য সুবিধা পান।"
@@ -741,44 +742,44 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            data-oid="wgy76n0"
+            data-oid="p14e538"
           >
-            <div className="relative" data-oid="ioxrl4w">
+            <div className="relative" data-oid="ac5k:ym">
               {/* Background gradient line */}
               <div
                 className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#6dbb00]/30 to-transparent transform -translate-y-1/2"
-                data-oid="pyhdcpy"
+                data-oid="qtbigmd"
               ></div>
 
               <div
                 className="flex items-center justify-between relative"
-                data-oid="jdllkpy"
+                data-oid="xs2a_f."
               >
                 {/* Build Score Card */}
                 <div
                   className="bg-white rounded-2xl p-4 shadow-lg border border-[#0d0d0d]/5 backdrop-blur-sm relative z-10 flex-1 max-w-xs mx-2"
-                  data-oid="z_u-hg4"
+                  data-oid=":mp8.z5"
                 >
-                  <div className="text-center" data-oid="v6ka8bg">
+                  <div className="text-center" data-oid="h6-adhc">
                     <div
                       className="w-12 h-12 mx-auto mb-3 rounded-xl bg-white flex items-center justify-center shadow-md"
-                      data-oid="joi7ops"
+                      data-oid="_b4fso9"
                     >
                       <CreditScoreGaugeIcon
                         score={765}
                         size={32}
-                        data-oid="0_0tc8m"
+                        data-oid="8f-2g52"
                       />
                     </div>
                     <h3
                       className="text-lg font-bold text-[#0d0d0d] mb-2"
-                      data-oid="slq40vo"
+                      data-oid="atm4woa"
                     >
                       {data.buildCircle}
                     </h3>
                     <p
                       className="text-[#0d0d0d]/60 text-xs leading-relaxed"
-                      data-oid="1725kyp"
+                      data-oid="lkk77._"
                     >
                       {lang === "bn"
                         ? "দৈনন্দিন আর্থিক কার্যক্রমের মাধ্যমে"
@@ -790,36 +791,36 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
                 {/* Modern Morphing Arrow Flow */}
                 <div
                   className="flex-shrink-0 mx-4 relative z-20"
-                  data-oid="cilfp0c"
+                  data-oid="vx0113f"
                 >
-                  <MorphingArrow data-oid="dm65:r1" />
+                  <MorphingArrow data-oid="yqm900." />
                 </div>
 
                 {/* Get Benefits Card */}
                 <div
                   className="bg-white rounded-2xl p-4 shadow-lg border border-[#0d0d0d]/5 backdrop-blur-sm relative z-10 flex-1 max-w-xs mx-2"
-                  data-oid="b554i64"
+                  data-oid="3luv0_e"
                 >
-                  <div className="text-center" data-oid="9sbw746">
+                  <div className="text-center" data-oid="1azqg-s">
                     <div
                       className="w-12 h-12 mx-auto mb-3 rounded-xl bg-white flex items-center justify-center shadow-md"
-                      data-oid="_rhymcx"
+                      data-oid="7x4:we_"
                     >
                       <BenefitsBurstIcon
                         size={32}
                         animated={true}
-                        data-oid="0dvaibb"
+                        data-oid="_wugctl"
                       />
                     </div>
                     <h3
                       className="text-lg font-bold text-[#0d0d0d] mb-2"
-                      data-oid="-c3i3o4"
+                      data-oid="xk07auy"
                     >
                       {data.benefitsCircle}
                     </h3>
                     <p
                       className="text-[#0d0d0d]/60 text-xs leading-relaxed"
-                      data-oid="q8jcq9l"
+                      data-oid="8eukpf9"
                     >
                       {lang === "bn"
                         ? "প্রতিষ্ঠানের কাছে বিশ্বস্ততা অর্জন করুন"
@@ -834,16 +835,16 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
           {/* carousels */}
           <div
             className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 w-full max-w-6xl mx-auto"
-            data-oid="ixk71y8"
+            data-oid="hy10ep8"
           >
             {/* build */}
             <div
               className="flex flex-col items-center justify-center"
-              data-oid="55o:uaw"
+              data-oid="ohugt2v"
             >
               <h2
                 className="text-center text-lg font-bold mb-4 w-full"
-                data-oid=":zrovpb"
+                data-oid="hhlzr80"
               >
                 {data.buildTitle}
               </h2>
@@ -852,24 +853,24 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
                 currentIndex={buildIndex}
                 onCardClick={setBuildIndex}
                 showPoints
-                data-oid="t09uttg"
+                data-oid=".oh99wr"
               />
 
               <CarouselDots
                 items={data.buildCards}
                 currentIndex={buildIndex}
                 onDotClick={setBuildIndex}
-                data-oid="7msypdk"
+                data-oid="eaawh1m"
               />
             </div>
             {/* benefits */}
             <div
               className="flex flex-col items-center justify-center"
-              data-oid="ggcmto-"
+              data-oid="qfch0a:"
             >
               <h2
                 className="text-center text-lg font-bold mb-4 w-full"
-                data-oid="g2b8y_3"
+                data-oid="45e1kkh"
               >
                 {data.benefitsTitle}
               </h2>
@@ -877,14 +878,14 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
                 cards={data.benefitsCards}
                 currentIndex={benefitIndex}
                 onCardClick={setBenefitIndex}
-                data-oid=".i4hhix"
+                data-oid="f3zv_9y"
               />
 
               <CarouselDots
                 items={data.benefitsCards}
                 currentIndex={benefitIndex}
                 onDotClick={setBenefitIndex}
-                data-oid="3-c5_7d"
+                data-oid="0tvkk:6"
               />
             </div>
           </div>

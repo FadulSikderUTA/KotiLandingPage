@@ -46,42 +46,42 @@ export default function PortfolioManagementCard({
   const data = content[lang];
 
   const PortfolioMockup = () => (
-    <div className="bg-white rounded-lg p-4 shadow-inner" data-oid="7:q0rew">
+    <div className="bg-white rounded-lg p-4 shadow-inner" data-oid="pdnjvkc">
       <div
         className="flex justify-between items-center mb-4"
-        data-oid="klsd-be"
+        data-oid="r_6lkhs"
       >
-        <div className="text-sm font-semibold text-gray-600" data-oid="mrufdza">
+        <div className="text-sm font-semibold text-gray-600" data-oid="g38ru5r">
           Portfolio Health
         </div>
         <div
           className="text-xs text-green-600 font-semibold"
-          data-oid="4z0gb:d"
+          data-oid="92oo4xm"
         >
           98%
         </div>
       </div>
       <div
         className="grid grid-cols-3 gap-2 text-center text-xs"
-        data-oid="jo4.osa"
+        data-oid="4x.0bis"
       >
-        <div data-oid="eb6xu3f">
-          <div className="font-bold text-blue-600" data-oid="3--fx47">
+        <div data-oid="hliqgz6">
+          <div className="font-bold text-blue-600" data-oid="8obtnsv">
             24/7
           </div>
-          <div data-oid="gry874p">Monitoring</div>
+          <div data-oid="5jq60pu">Monitoring</div>
         </div>
-        <div data-oid="pkklod_">
-          <div className="font-bold text-yellow-600" data-oid=".v:xm.s">
+        <div data-oid="l8pu.1f">
+          <div className="font-bold text-yellow-600" data-oid="qpct4h8">
             12
           </div>
-          <div data-oid="c81sqt-">Alerts</div>
+          <div data-oid="kb5:hl4">Alerts</div>
         </div>
-        <div data-oid="cnpbrgz">
-          <div className="font-bold text-green-600" data-oid="uai0iwg">
+        <div data-oid="t2oippm">
+          <div className="font-bold text-green-600" data-oid="_8s13e4">
             A+
           </div>
-          <div data-oid="85cg-1y">Health Score</div>
+          <div data-oid="6u6h-07">Health Score</div>
         </div>
       </div>
     </div>
@@ -89,15 +89,15 @@ export default function PortfolioManagementCard({
 
   return (
     <BusinessSolutionCard
-      icon={<LayoutDashboard size={32} color="white" data-oid="5baiyz4" />}
+      icon={<LayoutDashboard size={32} color="white" data-oid="459qnpo" />}
       category={data.category}
       title={data.title}
       description={data.description}
       features={data.features}
-      mockup={<PortfolioMockup data-oid="um2m5np" />}
+      mockup={<PortfolioMockup data-oid="agtbfv2" />}
       cta={data.cta}
       lang={lang}
-      data-oid="xbu:.uo"
+      data-oid="glou1pk"
     />
   );
 }

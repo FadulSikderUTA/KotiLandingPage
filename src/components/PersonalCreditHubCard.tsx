@@ -134,7 +134,7 @@ export default function PersonalCreditHubCard({
   }, [scenario]);
 
   return (
-    <div className="w-full max-w-6xl mx-auto p-4" data-oid="hkj48:g">
+    <div className="w-full max-w-6xl mx-auto p-4" data-oid="pbp1:fd">
       {/* MAIN RECTANGULAR CARD - Yeeld Style with Visible Border */}
       <motion.div
         className="bg-[#f3f3f3] rounded-2xl overflow-hidden shadow-lg transition-all duration-300"
@@ -146,29 +146,29 @@ export default function PersonalCreditHubCard({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        data-oid="g3lby0q"
+        data-oid="5cgy-.b"
       >
-        <div className="p-6" data-oid="kc2da-_">
+        <div className="p-6" data-oid="-w05:-m">
           {/* Header Row */}
           <div
             className="flex justify-between items-start mb-4"
-            data-oid="82a5r_r"
+            data-oid="ly_p.4d"
           >
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              data-oid="15:lncw"
+              data-oid="x1s:uwt"
             >
               <h2
                 className="text-xl font-bold text-[#0d0d0d] uppercase mb-1"
-                data-oid="b30pyqp"
+                data-oid="t87:4im"
               >
                 {t.title}
               </h2>
               <p
                 className="text-sm text-[#0d0d0d]/70 max-w-2xl"
-                data-oid="wwyja7p"
+                data-oid="ik4gsl0"
               >
                 {t.subtitle}
               </p>
@@ -180,7 +180,7 @@ export default function PersonalCreditHubCard({
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               whileHover={{ scale: 1.05 }}
-              data-oid="gd4.i.l"
+              data-oid="q1-3mb4"
             >
               {t.learnMore}
               <motion.svg
@@ -191,9 +191,9 @@ export default function PersonalCreditHubCard({
                 stroke="currentColor"
                 strokeWidth="2"
                 className="group-hover:translate-x-1 transition-transform"
-                data-oid=":zd7:hc"
+                data-oid="bmg5-rq"
               >
-                <polyline points="9 18 15 12 9 6" data-oid="p17i41x" />
+                <polyline points="9 18 15 12 9 6" data-oid="xprftwc" />
               </motion.svg>
             </motion.a>
           </div>
@@ -204,61 +204,61 @@ export default function PersonalCreditHubCard({
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            data-oid="je0daev"
+            data-oid="mzqyu2w"
           >
             {/* Score and Bar - Horizontal Layout */}
-            <div className="flex items-center gap-6 mb-4" data-oid="xlvogzi">
+            <div className="flex items-center gap-6 mb-4" data-oid="ta3iasw">
               {/* Score Number */}
-              <div className="text-center" data-oid="a796scr">
+              <div className="text-center" data-oid="yo2djpr">
                 <motion.div
                   className="text-5xl font-bold text-[#5daa80]"
                   key={Math.round(displayScore)}
                   initial={{ scale: 1.1 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.3 }}
-                  data-oid="7etsm1q"
+                  data-oid="8p7omlx"
                 >
                   {Math.round(displayScore)}
                 </motion.div>
                 <div
                   className="text-xs text-gray-600 mt-0.5"
-                  data-oid="6wj7749"
+                  data-oid=".b2y.5z"
                 >
                   KOTI SCORE
                 </div>
               </div>
 
               {/* Gradient Bar */}
-              <div className="flex-1" data-oid="11njjkf">
+              <div className="flex-1" data-oid="sm7q:ir">
                 <div
                   className="relative h-10 rounded-full overflow-hidden"
-                  data-oid="ghp1l3u"
+                  data-oid="e257n6y"
                 >
                   {/* Exact gradient from Hero.tsx */}
                   <div
                     className="absolute inset-0 bg-gradient-to-r from-red-500 via-orange-400 via-yellow-400 via-lime-400 to-green-500"
-                    data-oid="j:uibuo"
+                    data-oid="sf_6xxi"
                   ></div>
                   {/* Score pointer */}
                   <motion.div
                     className="absolute top-0 h-full w-2 bg-white rounded-full shadow-lg"
                     animate={{ left: `${((displayScore - 300) / 550) * 100}%` }}
                     transition={{ duration: 0.5, ease: "easeInOut" }}
-                    data-oid="wrux5jy"
+                    data-oid="d4k4an5"
                   />
                 </div>
                 <div
                   className="flex justify-between mt-2 text-xs text-gray-500"
-                  data-oid="sf0n.z8"
+                  data-oid="2br_:ui"
                 >
-                  <span data-oid="rqvcnq_">300</span>
-                  <span data-oid="jqwdbi.">850</span>
+                  <span data-oid="3ne54p1">300</span>
+                  <span data-oid="404.zcm">850</span>
                 </div>
               </div>
             </div>
 
             {/* Credit Factors - Animated */}
-            <div className="grid grid-cols-5 gap-2" data-oid="p62gjb.">
+            <div className="grid grid-cols-5 gap-2" data-oid="xj1eskn">
               {Object.entries(factors).map(([key, value], index) => (
                 <motion.div
                   key={key}
@@ -267,7 +267,7 @@ export default function PersonalCreditHubCard({
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
                   whileHover={{ scale: 1.05 }}
-                  data-oid="s539p_z"
+                  data-oid="k3ees.h"
                 >
                   <motion.div
                     className={`text-base font-bold ${(value as number) > 0 ? "text-[#5daa80]" : "text-red-500"}`}
@@ -275,12 +275,12 @@ export default function PersonalCreditHubCard({
                     initial={{ scale: 1.2 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.3 }}
-                    data-oid="xaxj2wp"
+                    data-oid="etdb.z6"
                   >
                     {(value as number) > 0 ? "+" : ""}
                     {value}
                   </motion.div>
-                  <div className="text-xs text-gray-600" data-oid=":s3bb:q">
+                  <div className="text-xs text-gray-600" data-oid="1r150xm">
                     {t.factors[key as keyof typeof t.factors]}
                   </div>
                 </motion.div>
@@ -289,7 +289,7 @@ export default function PersonalCreditHubCard({
           </motion.div>
 
           {/* Features Grid - 2x2 with Enhanced Styling */}
-          <div className="grid grid-cols-2 gap-3" data-oid="ne_t4:w">
+          <div className="grid grid-cols-2 gap-3" data-oid="76dsevl">
             {/* Monitoring */}
             <motion.div
               className="flex items-start gap-3 p-3 rounded-xl bg-[#5daa80]/5 hover:bg-[#5daa80]/10 transition-all duration-300 cursor-pointer group"
@@ -297,12 +297,12 @@ export default function PersonalCreditHubCard({
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
               whileHover={{ scale: 1.02 }}
-              data-oid="iy.hcq0"
+              data-oid="nv.5_c8"
             >
               <motion.div
                 className="w-10 h-10 bg-[#5daa80] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
                 whileHover={{ rotate: 5 }}
-                data-oid="-dhhp_p"
+                data-oid="5ej9gmj"
               >
                 <svg
                   width="20"
@@ -311,14 +311,14 @@ export default function PersonalCreditHubCard({
                   fill="none"
                   stroke="white"
                   strokeWidth="2"
-                  data-oid="bo.:es4"
+                  data-oid="sa_1a:8"
                 >
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" data-oid="v9iyevl" />
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" data-oid="0fw9dud" />
                 </svg>
               </motion.div>
               <p
                 className="text-sm text-[#0d0d0d]/80 group-hover:text-[#0d0d0d] transition-colors"
-                data-oid="wa.oclh"
+                data-oid="pqv4.vm"
               >
                 {t.features.monitoring}
               </p>
@@ -331,12 +331,12 @@ export default function PersonalCreditHubCard({
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
               whileHover={{ scale: 1.02 }}
-              data-oid="60dl30n"
+              data-oid="_3fkjor"
             >
               <motion.div
                 className="w-10 h-10 bg-[#5daa80] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
                 whileHover={{ rotate: -5 }}
-                data-oid="cndnw9t"
+                data-oid="m_k_2xu"
               >
                 <svg
                   width="20"
@@ -345,21 +345,22 @@ export default function PersonalCreditHubCard({
                   fill="none"
                   stroke="white"
                   strokeWidth="2"
-                  data-oid="tdf_2vu"
+                  data-oid="koi_3dt"
                 >
                   <path
                     d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-                    data-oid="xmz-lgn"
+                    data-oid="b9_2qfu"
                   />
-                  <polyline points="14,2 14,8 20,8" data-oid=":5g3tck" />
-                  <line x1="16" y1="13" x2="8" y2="13" data-oid="yiic0h9" />
-                  <line x1="16" y1="17" x2="8" y2="17" data-oid="goc394s" />
-                  <polyline points="10,9 9,9 8,9" data-oid="wgc.-4_" />
+
+                  <polyline points="14,2 14,8 20,8" data-oid="4_jizoo" />
+                  <line x1="16" y1="13" x2="8" y2="13" data-oid="cw6.:ld" />
+                  <line x1="16" y1="17" x2="8" y2="17" data-oid="-v2nnhj" />
+                  <polyline points="10,9 9,9 8,9" data-oid="nm:eqw_" />
                 </svg>
               </motion.div>
               <p
                 className="text-sm text-[#0d0d0d]/80 group-hover:text-[#0d0d0d] transition-colors"
-                data-oid="i7x3r8h"
+                data-oid="dl_tit2"
               >
                 {t.features.reports}
               </p>
@@ -372,12 +373,12 @@ export default function PersonalCreditHubCard({
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
               whileHover={{ scale: 1.02 }}
-              data-oid="_m4.mr:"
+              data-oid="64scg-1"
             >
               <motion.div
                 className="w-10 h-10 bg-[#5daa80] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
                 whileHover={{ rotate: 5 }}
-                data-oid="5313hzx"
+                data-oid="2-pj2ux"
               >
                 <svg
                   width="20"
@@ -386,15 +387,15 @@ export default function PersonalCreditHubCard({
                   fill="none"
                   stroke="white"
                   strokeWidth="2"
-                  data-oid="-ri17ic"
+                  data-oid="n1hcbrm"
                 >
-                  <circle cx="12" cy="12" r="10" data-oid="_sermpm" />
-                  <path d="M12 16v-4m0-4h.01" data-oid="51jkp8." />
+                  <circle cx="12" cy="12" r="10" data-oid="wlgw7x1" />
+                  <path d="M12 16v-4m0-4h.01" data-oid="ia:kxh-" />
                 </svg>
               </motion.div>
               <p
                 className="text-sm text-[#0d0d0d]/80 group-hover:text-[#0d0d0d] transition-colors"
-                data-oid="cfr-hp:"
+                data-oid="c5r_ei4"
               >
                 {t.features.insights}
               </p>
@@ -407,12 +408,12 @@ export default function PersonalCreditHubCard({
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.9 }}
               whileHover={{ scale: 1.02 }}
-              data-oid="viy-k:3"
+              data-oid="k36:_k1"
             >
               <motion.div
                 className="w-10 h-10 bg-[#5daa80] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
                 whileHover={{ rotate: -5 }}
-                data-oid="2tslw:m"
+                data-oid="dk8knj9"
               >
                 <svg
                   width="20"
@@ -421,17 +422,17 @@ export default function PersonalCreditHubCard({
                   fill="none"
                   stroke="white"
                   strokeWidth="2"
-                  data-oid="sgocjk1"
+                  data-oid="izqcr0x"
                 >
                   <path
                     d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
-                    data-oid="gyiogjm"
+                    data-oid="yuohoe3"
                   />
                 </svg>
               </motion.div>
               <p
                 className="text-sm text-[#0d0d0d]/80 group-hover:text-[#0d0d0d] transition-colors"
-                data-oid="0yr1.wb"
+                data-oid="e.vo8-d"
               >
                 {t.features.protection}
               </p>

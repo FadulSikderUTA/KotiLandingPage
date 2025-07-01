@@ -39,7 +39,7 @@ export default function BusinessSolutionsContent({
   return (
     <section
       className="relative min-h-screen w-full flex items-center justify-center px-3 py-3 bg-[#fdfdfd] z-30"
-      data-oid="2nt08:k"
+      data-oid="3u5rex."
     >
       {/* Page Container - Immediately stacks on top of Page 2 */}
       <motion.div
@@ -47,19 +47,19 @@ export default function BusinessSolutionsContent({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        data-oid="ovt3fj3"
+        data-oid="e8zerdi"
       >
         {/* Fixed Header - Always visible at top */}
         <div
           className="absolute top-0 left-0 right-0 z-50 text-center px-8 py-8 bg-white/95 backdrop-blur-md border-b border-gray-100"
-          data-oid="r95vns2"
+          data-oid=":awsfq."
         >
           <motion.h1
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d0d0d] tracking-tight mb-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            data-oid="88eny7h"
+            data-oid="4evukw8"
           >
             {lang === "bn" ? "ব্যবসায়িক সমাধান" : "BUSINESS SOLUTIONS"}
           </motion.h1>
@@ -68,7 +68,7 @@ export default function BusinessSolutionsContent({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            data-oid="fadduu1"
+            data-oid="xyqlgiu"
           >
             {lang === "bn"
               ? "বিশ্বস্ত ডেটা এবং স্মার্ট অ্যানালিটিক্স দিয়ে আপনার ব্যবসায়িক সিদ্ধান্তগুলি রূপান্তরিত করতে ব্যাপক ক্রেডিট ব্যুরো সেবা"
@@ -77,7 +77,7 @@ export default function BusinessSolutionsContent({
         </div>
 
         {/* Card Stacking Area - Pure stacking like main pages, no upward movement */}
-        <div className="absolute inset-0 top-40 bg-white" data-oid="dpws6o.">
+        <div className="absolute inset-0 top-40 bg-white" data-oid="1.usvaa">
           {/* Card 1: Personal Credit Hub - Slides in and stays in place */}
           <motion.div
             className="absolute left-0 right-0 flex justify-center px-8 top-8"
@@ -85,13 +85,13 @@ export default function BusinessSolutionsContent({
               y: card1Y,
               zIndex: 1,
             }}
-            data-oid="710tfsw"
+            data-oid="va5i.qf"
           >
             <div
               className="bg-white rounded-2xl shadow-xl border border-gray-100 w-full max-w-4xl"
-              data-oid="e4fu-yc"
+              data-oid="9689bmn"
             >
-              <PersonalCreditHubCard lang={lang} data-oid="5fsepzn" />
+              <PersonalCreditHubCard lang={lang} data-oid="dy.1mlc" />
             </div>
           </motion.div>
 
@@ -102,21 +102,21 @@ export default function BusinessSolutionsContent({
               y: card23Y,
               zIndex: 5,
             }}
-            data-oid="yv5m2fg"
+            data-oid="af:-4fr"
           >
-            <div className="w-full max-w-4xl" data-oid="fk-hvb:">
+            <div className="w-full max-w-4xl" data-oid="rrtg1o8">
               <div
                 className="flex bg-[#f3f3f3] rounded-2xl overflow-hidden shadow-xl border-[3px] border-[#5daa80]"
-                data-oid="ejj3elt"
+                data-oid="w3v0s9f"
               >
                 <div
                   className="flex-1 border-r border-[#5daa80]/50"
-                  data-oid="7s-x98n"
+                  data-oid="t6r_vnt"
                 >
-                  <FinancialEducationCard lang={lang} data-oid="iex9uvz" />
+                  <FinancialEducationCard lang={lang} data-oid="zc6pza." />
                 </div>
-                <div className="flex-1" data-oid=".5tjgf_">
-                  <MoneyManagementCard lang={lang} data-oid="l3chwx6" />
+                <div className="flex-1" data-oid="53i7wun">
+                  <MoneyManagementCard lang={lang} data-oid="sldp3oa" />
                 </div>
               </div>
             </div>
@@ -129,13 +129,13 @@ export default function BusinessSolutionsContent({
               y: card4Y,
               zIndex: 10,
             }}
-            data-oid="abl7qp3"
+            data-oid="xr2brco"
           >
             <div
               className="bg-white rounded-2xl shadow-xl border border-gray-100 w-full max-w-4xl"
-              data-oid="69zc1r0"
+              data-oid="2cs2:yz"
             >
-              <RiskIntelligenceCard lang={lang} data-oid=":pz13_v" />
+              <RiskIntelligenceCard lang={lang} data-oid="op-zq2c" />
             </div>
           </motion.div>
 
@@ -146,20 +146,20 @@ export default function BusinessSolutionsContent({
               y: card56Y,
               zIndex: 20,
             }}
-            data-oid="e5.gh-6"
+            data-oid="jhk1j85"
           >
             <div
               className="grid grid-cols-1 lg:grid-cols-2 gap-0 w-full max-w-4xl bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden"
-              data-oid="nip_lsa"
+              data-oid="kniazuu"
             >
               <div
                 className="bg-white border-r border-gray-100"
-                data-oid="z1y-sb."
+                data-oid="m6_adh4"
               >
-                <AnalyticsPlatformCard lang={lang} data-oid="e5q_-1t" />
+                <AnalyticsPlatformCard lang={lang} data-oid="0bcubfh" />
               </div>
-              <div className="bg-white" data-oid="h1sl7xt">
-                <DeveloperAPICard lang={lang} data-oid="xmwrujn" />
+              <div className="bg-white" data-oid="8-aev3n">
+                <DeveloperAPICard lang={lang} data-oid="aecmukb" />
               </div>
             </div>
           </motion.div>
@@ -171,20 +171,20 @@ export default function BusinessSolutionsContent({
               y: card78Y,
               zIndex: 30,
             }}
-            data-oid="q.q5u5y"
+            data-oid="2fojgd1"
           >
             <div
               className="grid grid-cols-1 lg:grid-cols-2 gap-0 w-full max-w-4xl bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden"
-              data-oid="dwde94q"
+              data-oid="zv6homg"
             >
               <div
                 className="bg-white border-r border-gray-100"
-                data-oid="u9ct4j1"
+                data-oid="47cbm:b"
               >
-                <PortfolioManagementCard lang={lang} data-oid=".2rvqkz" />
+                <PortfolioManagementCard lang={lang} data-oid="crtt8wc" />
               </div>
-              <div className="bg-white" data-oid="tr8f6an">
-                <FraudDetectionCard lang={lang} data-oid="imvl_-d" />
+              <div className="bg-white" data-oid="-b8_poz">
+                <FraudDetectionCard lang={lang} data-oid="nxkwcqy" />
               </div>
             </div>
           </motion.div>

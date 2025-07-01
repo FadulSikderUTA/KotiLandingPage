@@ -185,7 +185,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
     onCardClick,
   }: any) => {
     return (
-      <div className="relative w-full h-80 overflow-hidden" data-oid="l:4zmbu">
+      <div className="relative w-full h-80 overflow-hidden" data-oid="7ytv3c2">
         {/* Sliding container */}
         <motion.div
           className="flex items-center h-full"
@@ -199,7 +199,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
           style={{
             width: `${cards.length * 320}px`, // Width for all cards
           }}
-          data-oid="y9wk7fa"
+          data-oid="ikqp.b8"
         >
           {/* Render all cards in sequence */}
           {cards.map((card: any, index: number) => {
@@ -223,14 +223,14 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                 style={{
                   width: "320px",
                 }}
-                data-oid="vxqo:0j"
+                data-oid="tll1xil"
               >
                 <Card
                   card={card}
                   showPoints={showPoints}
                   lang={lang}
                   isCenter={isCenter}
-                  data-oid="w2kmvfk"
+                  data-oid="jo4hhxj"
                 />
               </motion.div>
             );
@@ -252,7 +252,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
             ? "0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 40px rgba(109, 187, 0, 0.15)"
             : "0 10px 25px -5px rgba(0, 0, 0, 0.15)",
         }}
-        data-oid="x8-01zg"
+        data-oid="5-7e2au"
       >
         {/* Background Image with smooth scaling */}
         <motion.div
@@ -267,13 +267,13 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
             scale: isCenter ? 1.1 : 1.05,
           }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
-          data-oid="3cjkugs"
+          data-oid="6mt.av8"
         />
 
         {/* Enhanced gradient overlay */}
         <div
           className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"
-          data-oid="zpot44m"
+          data-oid="9ik5u-4"
         />
 
         {/* Glow effect for center card */}
@@ -283,13 +283,13 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
             opacity: isCenter ? 1 : 0,
           }}
           transition={{ duration: 0.4 }}
-          data-oid="4avo7ye"
+          data-oid="z.emi.l"
         />
 
         {/* Content with smooth appearance */}
         <div
           className="absolute bottom-0 left-0 right-0 p-6"
-          data-oid="xwxryu1"
+          data-oid="h5.voy-"
         >
           <motion.div
             className="bg-black/70 backdrop-blur-lg rounded-2xl px-6 py-4 border border-white/30"
@@ -299,11 +299,11 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
               scale: isCenter ? 1 : 0.95,
             }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            data-oid="99w5f3x"
+            data-oid="rhowu1q"
           >
             <div
               className={`flex items-center ${showPoints ? "justify-between" : "justify-center"}`}
-              data-oid="h5j32ux"
+              data-oid="_787j9b"
             >
               <motion.div
                 className={showPoints ? "" : "text-center"}
@@ -311,7 +311,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                   opacity: 1,
                 }}
                 transition={{ duration: 0.4, delay: 0.1 }}
-                data-oid="upjv5jc"
+                data-oid="dc3_yeg"
               >
                 <motion.h3
                   className={`text-white font-bold ${isCenter ? "text-xl" : "text-lg"} mb-1`}
@@ -319,7 +319,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                     fontSize: isCenter ? "1.25rem" : "1.125rem",
                   }}
                   transition={{ duration: 0.4 }}
-                  data-oid="21rtep9"
+                  data-oid="9h6n-_1"
                 >
                   {card.title}
                 </motion.h3>
@@ -329,7 +329,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                     fontSize: isCenter ? "0.875rem" : "0.75rem",
                   }}
                   transition={{ duration: 0.4 }}
-                  data-oid="qpgu0iz"
+                  data-oid="wchqtwv"
                 >
                   {card.description}
                 </motion.p>
@@ -343,7 +343,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                     opacity: isCenter ? 1 : 0.8,
                   }}
                   transition={{ duration: 0.4 }}
-                  data-oid="flwliz0"
+                  data-oid="9yg7tig"
                 >
                   +
                   {lang === "bn" ? toBengaliNumerals(card.points) : card.points}
@@ -360,18 +360,18 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
     <section
       id="how-it-works"
       className="relative min-h-screen w-full flex items-center justify-center px-3 py-3 bg-[#fdfdfd]"
-      data-oid="li2cumg"
+      data-oid="pohh6gy"
     >
       <div
         className="relative w-[96vw] h-[110vh] rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl bg-[#fdfdfd]"
-        data-oid="_-ocwfn"
+        data-oid="dwj7mih"
       >
-        <div className="h-full flex flex-col p-8" data-oid="5ntgk86">
+        <div className="h-full flex flex-col p-8" data-oid="7gkjwp4">
           {/* Header */}
-          <div className="text-center mb-8" data-oid="uxhj64y">
+          <div className="text-center mb-8" data-oid="0s05f_q">
             <h1
               className="text-4xl font-bold text-[#0d0d0d] mb-8"
-              data-oid="wue5oyq"
+              data-oid="sn1p57:"
             >
               {currentContent.title}
             </h1>
@@ -379,7 +379,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
             {/* Modern Build Score + Get Benefits Design */}
             <div
               className="flex items-center justify-center gap-8 mb-12"
-              data-oid="qhvdmx:"
+              data-oid="0toz1z1"
             >
               {/* Build Score Modern Card */}
               <motion.div
@@ -387,32 +387,32 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-center"
-                data-oid="df5ozzl"
+                data-oid="hl32srl"
               >
                 <div
                   className="relative bg-gradient-to-br from-[#6dbb00] to-[#5da600] rounded-3xl p-8 shadow-2xl border border-white/20 backdrop-blur-sm"
-                  data-oid="xk62y7z"
+                  data-oid="bvvczcr"
                 >
                   <div
                     className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-3xl"
-                    data-oid="7w_7ubl"
+                    data-oid="n70fikx"
                   ></div>
-                  <div className="relative" data-oid=".j.mkoc">
+                  <div className="relative" data-oid="g45zqz.">
                     <div
                       className="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-2xl flex items-center justify-center"
-                      data-oid="98vx0lv"
+                      data-oid="oyhbnor"
                     >
-                      <span className="text-2xl" data-oid="k5tyo.p">
+                      <span className="text-2xl" data-oid="s09hagv">
                         📈
                       </span>
                     </div>
                     <h3
                       className="text-white font-bold text-2xl mb-2"
-                      data-oid="e3cgldj"
+                      data-oid=".4.75yo"
                     >
                       {currentContent.buildCircle}
                     </h3>
-                    <p className="text-white/80 text-sm" data-oid="56gwgll">
+                    <p className="text-white/80 text-sm" data-oid="b-bqshp">
                       {lang === "bn"
                         ? "আপনার ক্রেডিট যাত্রা শুরু করুন"
                         : "Start your credit journey"}
@@ -427,13 +427,13 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 className="flex items-center"
-                data-oid="q.9vyen"
+                data-oid="3czjo.v"
               >
-                <div className="relative flex items-center" data-oid="8u6dsae">
+                <div className="relative flex items-center" data-oid="gcc.iff">
                   {/* Animated line with moving light effect */}
                   <div
                     className="w-20 h-1 bg-gradient-to-r from-[#6dbb00] to-[#5da600] rounded-full relative overflow-hidden"
-                    data-oid="_32cj93"
+                    data-oid="bp1.a.d"
                   >
                     <motion.div
                       className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent"
@@ -445,7 +445,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                         repeat: Infinity,
                         ease: "linear",
                       }}
-                      data-oid="68k-sm6"
+                      data-oid="x7xo77r"
                     />
                   </div>
                   {/* Arrow head */}
@@ -459,11 +459,11 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                       ease: "easeInOut",
                     }}
                     className="ml-2"
-                    data-oid="w2zzaei"
+                    data-oid="v3c3fun"
                   >
                     <div
                       className="w-0 h-0 border-t-6 border-b-6 border-l-10 border-t-transparent border-b-transparent border-l-[#6dbb00] filter drop-shadow-sm"
-                      data-oid="um512y_"
+                      data-oid="rn0l_-j"
                     ></div>
                   </motion.div>
                 </div>
@@ -475,32 +475,32 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
                 className="text-center"
-                data-oid="-e4_dez"
+                data-oid="vr:d3io"
               >
                 <div
                   className="relative bg-gradient-to-br from-[#6dbb00] to-[#5da600] rounded-3xl p-8 shadow-2xl border border-white/20 backdrop-blur-sm"
-                  data-oid="jnamz-_"
+                  data-oid="17e:f28"
                 >
                   <div
                     className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-3xl"
-                    data-oid="4qxgtw8"
+                    data-oid="qhd:ihg"
                   ></div>
-                  <div className="relative" data-oid="cbov7tc">
+                  <div className="relative" data-oid="iarrrki">
                     <div
                       className="w-16 h-16 mx-auto mb-4 bg-white/20 rounded-2xl flex items-center justify-center"
-                      data-oid="vu481zd"
+                      data-oid="xrpzs3d"
                     >
-                      <span className="text-2xl" data-oid="c87anor">
+                      <span className="text-2xl" data-oid="7f6qe9j">
                         🎯
                       </span>
                     </div>
                     <h3
                       className="text-white font-bold text-2xl mb-2"
-                      data-oid="ds:8p02"
+                      data-oid="t7euido"
                     >
                       {currentContent.benefitsCircle}
                     </h3>
-                    <p className="text-white/80 text-sm" data-oid="wjfyfxo">
+                    <p className="text-white/80 text-sm" data-oid="_858u9p">
                       {lang === "bn"
                         ? "আর্থিক সুবিধা উপভোগ করুন"
                         : "Enjoy financial benefits"}
@@ -514,13 +514,13 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
           {/* Main Content */}
           <div
             className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-8"
-            data-oid="nrwagzr"
+            data-oid="l9qo2e0"
           >
             {/* Left: Build Score */}
-            <div className="space-y-6" data-oid="8pr-trl">
+            <div className="space-y-6" data-oid="i-tf:s.">
               <h2
                 className="text-2xl font-bold text-[#0d0d0d] text-center"
-                data-oid="u-7tc8a"
+                data-oid="g89ol8d"
               >
                 {currentContent.buildTitle}
               </h2>
@@ -530,11 +530,11 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                 currentIndex={buildIndex}
                 showPoints={true}
                 onCardClick={setBuildIndex}
-                data-oid="ib4.p0_"
+                data-oid="9l709oz"
               />
 
               {/* Navigation Dots */}
-              <div className="flex justify-center gap-2" data-oid="e95gl2c">
+              <div className="flex justify-center gap-2" data-oid=".5gwg2d">
                 {currentContent.buildCards.map((_, index) => (
                   <motion.button
                     key={index}
@@ -546,17 +546,17 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                     }`}
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
-                    data-oid="yt20ulo"
+                    data-oid=":30c6u6"
                   />
                 ))}
               </div>
             </div>
 
             {/* Right: Who Uses */}
-            <div className="space-y-6" data-oid="lbcj.wm">
+            <div className="space-y-6" data-oid="nrr7pna">
               <h2
                 className="text-2xl font-bold text-[#0d0d0d] text-center"
-                data-oid="i76c-yu"
+                data-oid="7rnkjs6"
               >
                 {currentContent.benefitsTitle}
               </h2>
@@ -566,11 +566,11 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                 currentIndex={benefitsIndex}
                 showPoints={false}
                 onCardClick={setBenefitsIndex}
-                data-oid="2t5ab:q"
+                data-oid="cy_cf0q"
               />
 
               {/* Navigation Dots - Fixed to track benefitsIndex properly */}
-              <div className="flex justify-center gap-2" data-oid="ty9dmrb">
+              <div className="flex justify-center gap-2" data-oid="bfb7j8m">
                 {currentContent.benefitsCards.map((_, index) => (
                   <motion.button
                     key={index}
@@ -582,7 +582,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                     }`}
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
-                    data-oid="i2nh50h"
+                    data-oid="l3oi6ty"
                   />
                 ))}
               </div>

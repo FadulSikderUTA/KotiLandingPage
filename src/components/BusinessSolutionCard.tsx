@@ -33,27 +33,27 @@ export default function BusinessSolutionCard({
         boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
       }}
       transition={{ duration: 0.3 }}
-      data-oid="ge54:ph"
+      data-oid="ve-d.j7"
     >
-      <div className="flex items-center gap-4 mb-8" data-oid="dso4n7n">
+      <div className="flex items-center gap-4 mb-8" data-oid="22hcwe1">
         <motion.div
           className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#6dbb00] to-[#5da600] flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300"
           whileHover={{ scale: 1.1, rotate: 5 }}
           transition={{ duration: 0.2 }}
-          data-oid="99cyrm:"
+          data-oid="9r1ggr-"
         >
           {icon}
         </motion.div>
-        <div className="flex-1" data-oid="s27:f3t">
+        <div className="flex-1" data-oid="cl6g940">
           <div
             className="text-xs uppercase tracking-wide text-[#6dbb00] font-semibold mb-1 transition-colors duration-300 group-hover:text-[#5da600]"
-            data-oid="7yhpudb"
+            data-oid="m2538j6"
           >
             {category}
           </div>
           <h3
             className="text-xl md:text-2xl lg:text-3xl font-bold text-[#0d0d0d] leading-tight group-hover:text-[#6dbb00] transition-colors duration-300"
-            data-oid="avln33x"
+            data-oid="_q_yxct"
           >
             {title}
           </h3>
@@ -61,17 +61,17 @@ export default function BusinessSolutionCard({
       </div>
       <p
         className="text-[#0d0d0d]/70 mb-8 leading-relaxed text-sm md:text-base lg:text-lg"
-        data-oid="oll5u2r"
+        data-oid="2fm_nji"
       >
         {description}
       </p>
       <div
         className="mb-8 rounded-xl bg-gray-50 p-6 shadow-inner border border-gray-100 group-hover:bg-gray-100 transition-all duration-300"
-        data-oid="na1f_aq"
+        data-oid="dk1awgl"
       >
         {mockup}
       </div>
-      <div className="space-y-4 mb-8" data-oid=".hjfauc">
+      <div className="space-y-4 mb-8" data-oid="x:7gv33">
         {features.map((feature, index) => (
           <motion.div
             key={index}
@@ -79,15 +79,15 @@ export default function BusinessSolutionCard({
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3, delay: index * 0.1 }}
-            data-oid="jnzn8b0"
+            data-oid="j:-szpc"
           >
             <div
               className="w-2 h-2 rounded-full bg-[#6dbb00] mt-2.5 flex-shrink-0 group-hover/feature:scale-125 transition-transform duration-200"
-              data-oid="ul--g_j"
+              data-oid="-wlqpxo"
             ></div>
             <span
               className="text-sm md:text-base text-[#0d0d0d]/80 leading-relaxed group-hover/feature:text-[#0d0d0d] transition-colors duration-200"
-              data-oid="dhz9rjk"
+              data-oid="t0:6lc7"
             >
               {feature}
             </span>
@@ -102,7 +102,7 @@ export default function BusinessSolutionCard({
         }}
         whileTap={{ scale: 0.98 }}
         transition={{ duration: 0.2 }}
-        data-oid="5cczde4"
+        data-oid="d753szl"
       >
         {cta}
       </motion.button>

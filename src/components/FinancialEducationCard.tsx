@@ -44,17 +44,17 @@ export default function FinancialEducationCard({
   const t = content[lang];
 
   return (
-    <div className="w-full h-full p-6 flex flex-col" data-oid="-_z8ruw">
+    <div className="w-full h-full p-6 flex flex-col" data-oid="-ads3n2">
       {/* Header */}
-      <div className="flex justify-between items-start mb-4" data-oid="t7dsc67">
-        <div data-oid="qxl4f3x">
+      <div className="flex justify-between items-start mb-4" data-oid="fkq-40g">
+        <div data-oid="stcs9by">
           <h3
             className="text-xl font-bold text-[#0d0d0d] uppercase mb-1"
-            data-oid="mu04kj:"
+            data-oid="99qygy7"
           >
             {t.category}
           </h3>
-          <p className="text-sm text-[#0d0d0d]/70 max-w-2xl" data-oid="uwxx73v">
+          <p className="text-sm text-[#0d0d0d]/70 max-w-2xl" data-oid="apovbn_">
             {t.description}
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function FinancialEducationCard({
           href="#"
           className="text-[#5daa80] font-medium flex items-center gap-1 hover:gap-2 transition-all text-sm group"
           whileHover={{ scale: 1.05 }}
-          data-oid="xsynzok"
+          data-oid="i9x_eqa"
         >
           {t.cta}
           <motion.svg
@@ -73,15 +73,15 @@ export default function FinancialEducationCard({
             stroke="currentColor"
             strokeWidth="2"
             className="group-hover:translate-x-1 transition-transform"
-            data-oid="k3ihsb1"
+            data-oid="2k9585m"
           >
-            <polyline points="9 18 15 12 9 6" data-oid="8dx6:29" />
+            <polyline points="9 18 15 12 9 6" data-oid="tjp6-1u" />
           </motion.svg>
         </motion.a>
       </div>
 
       {/* Features Grid */}
-      <div className="flex-1 space-y-3" data-oid="vl5p0f6">
+      <div className="flex-1 space-y-3" data-oid="1:m9f1b">
         {t.features.map((feature, index) => (
           <motion.div
             key={index}
@@ -90,12 +90,12 @@ export default function FinancialEducationCard({
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
             whileHover={{ scale: 1.02 }}
-            data-oid="qywqcqk"
+            data-oid="r16mrcg"
           >
             <motion.div
               className="w-8 h-8 bg-[#5daa80] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
               whileHover={{ rotate: 5 }}
-              data-oid="-rjfu-h"
+              data-oid="lt34e69"
             >
               {index === 0 && (
                 <svg
@@ -105,15 +105,16 @@ export default function FinancialEducationCard({
                   fill="none"
                   stroke="white"
                   strokeWidth="2"
-                  data-oid="18m-xpc"
+                  data-oid="2.53en-"
                 >
                   <path
                     d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"
-                    data-oid="k3yl0_4"
+                    data-oid="7.mgvcc"
                   />
+
                   <path
                     d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"
-                    data-oid="zg7ai91"
+                    data-oid="ym4lxqr"
                   />
                 </svg>
               )}
@@ -125,9 +126,9 @@ export default function FinancialEducationCard({
                   fill="none"
                   stroke="white"
                   strokeWidth="2"
-                  data-oid="kzt3dwn"
+                  data-oid="nxy710a"
                 >
-                  <polygon points="23 7 16 12 23 17 23 7" data-oid="t2thicz" />
+                  <polygon points="23 7 16 12 23 17 23 7" data-oid="qfmcs.h" />
                   <rect
                     x="1"
                     y="5"
@@ -135,7 +136,7 @@ export default function FinancialEducationCard({
                     height="14"
                     rx="2"
                     ry="2"
-                    data-oid="akzlbe9"
+                    data-oid="lry.23h"
                   />
                 </svg>
               )}
@@ -147,15 +148,16 @@ export default function FinancialEducationCard({
                   fill="none"
                   stroke="white"
                   strokeWidth="2"
-                  data-oid="9ct69ze"
+                  data-oid="2dfy.wm"
                 >
                   <path
                     d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-                    data-oid="vhq3ree"
+                    data-oid="2.xbwni"
                   />
-                  <polyline points="14,2 14,8 20,8" data-oid="kyw:dl:" />
-                  <path d="M16 13l-3-3 3-3" data-oid="c6k6fxf" />
-                  <path d="M8 13h7" data-oid="id-g894" />
+
+                  <polyline points="14,2 14,8 20,8" data-oid="nz.an66" />
+                  <path d="M16 13l-3-3 3-3" data-oid="bp.dao3" />
+                  <path d="M8 13h7" data-oid="3f1v6dy" />
                 </svg>
               )}
               {index === 3 && (
@@ -166,19 +168,19 @@ export default function FinancialEducationCard({
                   fill="none"
                   stroke="white"
                   strokeWidth="2"
-                  data-oid="ldjy:-5"
+                  data-oid="qo5u:9:"
                 >
-                  <circle cx="12" cy="8" r="7" data-oid="mi:63y3" />
+                  <circle cx="12" cy="8" r="7" data-oid="qkrccrh" />
                   <polyline
                     points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"
-                    data-oid="8z0thc_"
+                    data-oid="kjydsx9"
                   />
                 </svg>
               )}
             </motion.div>
             <p
               className="text-xs text-[#0d0d0d]/80 group-hover:text-[#0d0d0d] transition-colors leading-relaxed"
-              data-oid="xrjl-jv"
+              data-oid="mi880e6"
             >
               {feature}
             </p>

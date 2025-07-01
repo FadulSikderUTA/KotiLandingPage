@@ -97,45 +97,45 @@ const Hero = ({ lang }: HeroProps) => {
 
   return (
     <section
-      className="relative min-h-screen w-full flex items-center justify-center px-3 py-3 bg-[#fdfdfd]"
-      data-oid="97:a-tv"
+      className="relative min-h-screen w-full flex items-center justify-center px-3 py-3 bg-[#fdfdfd] h-[1011px]"
+      data-oid="qdoubp0"
     >
       {/* Balanced scaling - fills most of viewport with nice white space border */}
       <div
         className="relative w-[96vw] h-[94vh] rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl"
-        data-oid="2lueldo"
+        data-oid="0ulzcc2"
       >
         {/* Image as background for the container only */}
-        <div className="absolute inset-0" data-oid="ww4tpxx">
+        <div className="absolute inset-0" data-oid=":4x-ve3">
           <Image
             src="/hero-image.png"
             alt="Koti Credit Services"
             fill
             className="object-cover"
             priority
-            data-oid="n-ono:z"
+            data-oid="_6hu355"
           />
 
           {/* Overlay for better text readability */}
           <div
             className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30"
-            data-oid="afw1jo2"
+            data-oid="n81.yaq"
           />
         </div>
 
         {/* Content positioned over the contained background like Yeeld */}
         <div
           className="relative z-10 h-full flex items-center"
-          data-oid="5zxvk65"
+          data-oid="nenjp8c"
         >
           <div
             className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-6 sm:py-8 lg:py-16"
-            data-oid="0mmgag7"
+            data-oid="_.6g1i5"
           >
             {/* STANDARDIZED GRID - Fixed gap between left content and right card */}
             <div
               className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-20 items-center h-full"
-              data-oid="cbhg3hb"
+              data-oid="azsviiz"
             >
               {/* Left column - Text content - FIXED WIDTH */}
               <motion.div
@@ -143,25 +143,25 @@ const Hero = ({ lang }: HeroProps) => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
                 className="space-y-4 sm:space-y-6 lg:space-y-8"
-                data-oid="gw.d.:q"
+                data-oid="k1:4brk"
               >
                 <div
                   className="space-y-3 sm:space-y-4 lg:space-y-6"
-                  data-oid="5ips.-v"
+                  data-oid="9s8n-i."
                 >
                   <h1
                     className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight text-white"
-                    data-oid=".tayrva"
+                    data-oid="xaw49eh"
                   >
-                    <span className="block" data-oid="bm:t5sc">
+                    <span className="block" data-oid="2hj9wjk">
                       {currentContent.title}
                     </span>
                   </h1>
 
                   {/* Complete slogan */}
                   <h2
-                    className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium text-white/90 leading-relaxed max-w-2xl"
-                    data-oid="nanqc7e"
+                    className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium text-white/90 leading-relaxed max-w-2xl h-[47px]"
+                    data-oid="05287e8"
                   >
                     {currentContent.fullSlogan}
                   </h2>
@@ -172,10 +172,10 @@ const Hero = ({ lang }: HeroProps) => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-flex items-center gap-2 sm:gap-3 rounded-full bg-[#6dbb00] px-4 sm:px-6 lg:px-8 py-2.5 sm:py-3 lg:py-4 text-sm sm:text-base lg:text-lg font-semibold text-[#0d0d0d] shadow-lg transition-all duration-300 hover:bg-[#5da600] hover:shadow-xl"
-                  data-oid="d:rzkgj"
+                  data-oid="_h7yg1d"
                 >
-                  <span data-oid="an6days">{currentContent.button}</span>
-                  <span data-oid="vfaa281">→</span>
+                  <span data-oid=".dlt5hb">{currentContent.button}</span>
+                  <span data-oid="rv0xiu_">→</span>
                 </motion.button>
               </motion.div>
 
@@ -185,21 +185,21 @@ const Hero = ({ lang }: HeroProps) => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="flex justify-center lg:justify-end"
-                data-oid="37x:vwd"
+                data-oid="hy25uj1"
               >
                 {/* BIGGER Koti Score Card - Increased size */}
                 <div
                   className="w-full max-w-lg rounded-xl sm:rounded-2xl lg:rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 p-6 sm:p-8 lg:p-12 shadow-2xl"
-                  data-oid="3k.s_4m"
+                  data-oid="i:fr14w"
                 >
                   {/* Score display - ALL ANIMATIONS START AT SAME TIME (delay: 0.8) */}
-                  <div className="text-center mb-8 lg:mb-10" data-oid="6k9a-wf">
+                  <div className="text-center mb-8 lg:mb-10" data-oid="-x-g99i">
                     <motion.div
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
                       transition={{ duration: 0.6, delay: 0.8 }}
                       className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-[#6dbb00] mb-4"
-                      data-oid="llj-jcy"
+                      data-oid="jwi_4bn"
                     >
                       {lang === "bn"
                         ? toBengaliNumerals(animatedScore)
@@ -207,13 +207,13 @@ const Hero = ({ lang }: HeroProps) => {
                     </motion.div>
                     <div
                       className="text-lg sm:text-xl lg:text-2xl font-medium text-white/90 mb-3"
-                      data-oid="c8nq7do"
+                      data-oid="t1tg-60"
                     >
                       {currentContent.scoreLabel}
                     </div>
                     <div
                       className="text-sm sm:text-base text-white/70"
-                      data-oid="08zotqw"
+                      data-oid="vrnqf4j"
                     >
                       {currentContent.scoreRange}
                     </div>
@@ -225,23 +225,23 @@ const Hero = ({ lang }: HeroProps) => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.8 }}
                     className="mb-8"
-                    data-oid="iwfyigm"
+                    data-oid="754zg0_"
                   >
                     {/* Score range visualization - MUCH BIGGER BAR */}
                     <div
                       className="relative h-14 lg:h-16 bg-white/20 rounded-xl overflow-hidden mb-8"
-                      data-oid="wb2gg2l"
+                      data-oid="k4o_5th"
                     >
                       {/* Smooth gradient background - Red to Green transition */}
                       <div
                         className="absolute inset-0 bg-gradient-to-r from-red-500 via-orange-400 via-yellow-400 via-lime-400 to-green-500 rounded-xl"
-                        data-oid="sncg_:r"
+                        data-oid="eilempl"
                       ></div>
 
                       {/* Optional: Add subtle shadow overlay for depth */}
                       <div
                         className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/10 rounded-xl"
-                        data-oid="y_39dyi"
+                        data-oid="5w-_ogj"
                       ></div>
 
                       {/* MATHEMATICALLY SYNCHRONIZED pointer - moves with score in real-time */}
@@ -251,37 +251,37 @@ const Hero = ({ lang }: HeroProps) => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.3, delay: 0.8 }}
-                        data-oid="8turumq"
+                        data-oid="rbjx8pg"
                       >
                         {/* Pointer line */}
                         <div
                           className="w-1.5 h-full bg-white shadow-lg"
-                          data-oid="xx1lpru"
+                          data-oid="i88c9xt"
                         ></div>
                         {/* Triangle pointer at top */}
                         <div
                           className="absolute -top-3 left-1/2 transform -translate-x-1/2"
-                          data-oid="45::e74"
+                          data-oid="qz8n-cl"
                         >
                           <div
                             className="w-0 h-0 border-l-[8px] border-r-[8px] border-b-[10px] border-l-transparent border-r-transparent border-b-white"
-                            data-oid="y-j0.qg"
+                            data-oid="914gwfl"
                           ></div>
                         </div>
                         {/* Triangle pointer at bottom */}
                         <div
                           className="absolute -bottom-3 left-1/2 transform -translate-x-1/2"
-                          data-oid="gk_vqa2"
+                          data-oid="pvux9ou"
                         >
                           <div
                             className="w-0 h-0 border-l-[8px] border-r-[8px] border-t-[10px] border-l-transparent border-r-transparent border-t-white"
-                            data-oid="d_oqfcn"
+                            data-oid="x_.ymcb"
                           ></div>
                         </div>
                         {/* Glowing effect */}
                         <div
                           className="absolute inset-0 w-1.5 h-full bg-white opacity-50 blur-sm"
-                          data-oid="6:de1c7"
+                          data-oid="z6o1qdm"
                         ></div>
                       </motion.div>
                     </div>
@@ -289,16 +289,16 @@ const Hero = ({ lang }: HeroProps) => {
                     {/* Score range labels with actual ranges - BIGGER TEXT */}
                     <div
                       className="grid grid-cols-5 gap-0 text-sm text-white/80 mb-6"
-                      data-oid="n-dkohg"
+                      data-oid="3bg8b-p"
                     >
-                      <div className="text-center" data-oid=".w_6vu2">
+                      <div className="text-center" data-oid="om4ylra">
                         <div
                           className="text-red-300 font-semibold mb-1"
-                          data-oid="7dbd1j5"
+                          data-oid="-2_w-gr"
                         >
                           {currentContent.categories["Poor"]}
                         </div>
-                        <div className="text-xs opacity-70" data-oid="djlb_k.">
+                        <div className="text-xs opacity-70" data-oid=":qd42zq">
                           (
                           {lang === "bn"
                             ? `${toBengaliNumerals(300)}-${toBengaliNumerals(599)}`
@@ -306,14 +306,14 @@ const Hero = ({ lang }: HeroProps) => {
                           )
                         </div>
                       </div>
-                      <div className="text-center" data-oid="6h481.j">
+                      <div className="text-center" data-oid="35j.a:u">
                         <div
                           className="text-orange-300 font-semibold mb-1"
-                          data-oid="d1bkk.p"
+                          data-oid=":q_lpob"
                         >
                           {currentContent.categories["Fair"]}
                         </div>
-                        <div className="text-xs opacity-70" data-oid="6xvaf.b">
+                        <div className="text-xs opacity-70" data-oid="22v266w">
                           (
                           {lang === "bn"
                             ? `${toBengaliNumerals(600)}-${toBengaliNumerals(649)}`
@@ -321,14 +321,14 @@ const Hero = ({ lang }: HeroProps) => {
                           )
                         </div>
                       </div>
-                      <div className="text-center" data-oid="vwbywhc">
+                      <div className="text-center" data-oid="lh9x5m5">
                         <div
                           className="text-yellow-300 font-semibold mb-1"
-                          data-oid="6:_p81s"
+                          data-oid="sigy79c"
                         >
                           {currentContent.categories["Good"]}
                         </div>
-                        <div className="text-xs opacity-70" data-oid="0lp-vsv">
+                        <div className="text-xs opacity-70" data-oid="iekl:pp">
                           (
                           {lang === "bn"
                             ? `${toBengaliNumerals(650)}-${toBengaliNumerals(699)}`
@@ -336,14 +336,14 @@ const Hero = ({ lang }: HeroProps) => {
                           )
                         </div>
                       </div>
-                      <div className="text-center" data-oid="e7la4bv">
+                      <div className="text-center" data-oid="u7ntgy5">
                         <div
                           className="text-lime-300 font-semibold mb-1"
-                          data-oid="5cauz:_"
+                          data-oid="t:.vfn:"
                         >
                           {currentContent.categories["Very Good"]}
                         </div>
-                        <div className="text-xs opacity-70" data-oid="5j8ww7t">
+                        <div className="text-xs opacity-70" data-oid=":fpw-7w">
                           (
                           {lang === "bn"
                             ? `${toBengaliNumerals(700)}-${toBengaliNumerals(749)}`
@@ -351,14 +351,14 @@ const Hero = ({ lang }: HeroProps) => {
                           )
                         </div>
                       </div>
-                      <div className="text-center" data-oid="901_5p6">
+                      <div className="text-center" data-oid="vyf_vgs">
                         <div
                           className="text-green-300 font-semibold mb-1"
-                          data-oid="zrtgp4p"
+                          data-oid="-d24t7y"
                         >
                           {currentContent.categories["Excellent"]}
                         </div>
-                        <div className="text-xs opacity-70" data-oid="6q.o.ti">
+                        <div className="text-xs opacity-70" data-oid="hb7:tsx">
                           (
                           {lang === "bn"
                             ? `${toBengaliNumerals(750)}+`
@@ -374,11 +374,11 @@ const Hero = ({ lang }: HeroProps) => {
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.5, delay: 0.8 }}
                       className="text-center mt-6"
-                      data-oid="gm3lf3z"
+                      data-oid="sohr-r."
                     >
                       <div
                         className={`inline-block px-6 py-3 rounded-full text-white font-semibold text-base ${riskInfo.color}`}
-                        data-oid="5b6uldi"
+                        data-oid="imdd6:a"
                       >
                         {
                           currentContent.categories[
@@ -388,7 +388,7 @@ const Hero = ({ lang }: HeroProps) => {
                       </div>
                       <div
                         className="text-sm text-white/70 mt-2"
-                        data-oid="xxwytmu"
+                        data-oid="1zuasch"
                       >
                         {lang === "bn"
                           ? toBengaliNumerals(

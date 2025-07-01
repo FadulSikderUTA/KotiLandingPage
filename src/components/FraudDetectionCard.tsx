@@ -44,36 +44,36 @@ export default function FraudDetectionCard({ lang }: FraudDetectionCardProps) {
   const data = content[lang];
 
   const SecurityMockup = () => (
-    <div className="bg-white rounded-lg p-4 shadow-inner" data-oid="7sg1mfw">
+    <div className="bg-white rounded-lg p-4 shadow-inner" data-oid="r829kyu">
       <div
         className="flex justify-between items-center mb-4"
-        data-oid="d4yxvok"
+        data-oid="dn4qcua"
       >
-        <div className="text-sm font-semibold text-gray-600" data-oid="dkkrsfa">
+        <div className="text-sm font-semibold text-gray-600" data-oid="pc6j0fw">
           System Status
         </div>
         <div
           className="text-xs text-green-600 font-semibold"
-          data-oid="_r3fm:z"
+          data-oid="xjsrq7p"
         >
           Protected
         </div>
       </div>
       <div
         className="grid grid-cols-2 gap-2 text-center text-xs"
-        data-oid="tmjl-1m"
+        data-oid="s4aj:cl"
       >
-        <div data-oid="d5c4uyh">
-          <div className="font-bold text-green-600" data-oid="nu3dpzj">
+        <div data-oid="p.l6kio">
+          <div className="font-bold text-green-600" data-oid="phc_2:b">
             99.9%
           </div>
-          <div data-oid="0147qcv">Detection Rate</div>
+          <div data-oid="fsy86-5">Detection Rate</div>
         </div>
-        <div data-oid="b9a.kai">
-          <div className="font-bold text-blue-600" data-oid="g.fn.xu">
+        <div data-oid="_q2-kuq">
+          <div className="font-bold text-blue-600" data-oid="y-av0c4">
             24/7
           </div>
-          <div data-oid="ao:os8e">Operational</div>
+          <div data-oid="7ci2kx9">Operational</div>
         </div>
       </div>
     </div>
@@ -81,15 +81,15 @@ export default function FraudDetectionCard({ lang }: FraudDetectionCardProps) {
 
   return (
     <BusinessSolutionCard
-      icon={<Lock size={32} color="white" data-oid="z-e863." />}
+      icon={<Lock size={32} color="white" data-oid="572m02c" />}
       category={data.category}
       title={data.title}
       description={data.description}
       features={data.features}
-      mockup={<SecurityMockup data-oid="cy_qm5v" />}
+      mockup={<SecurityMockup data-oid="o7ur:96" />}
       cta={data.cta}
       lang={lang}
-      data-oid="6lv0xk1"
+      data-oid="fpn5x80"
     />
   );
 }
