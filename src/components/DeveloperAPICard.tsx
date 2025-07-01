@@ -1,6 +1,6 @@
 "use client";
 
-import BusinessSolutionCard from "./BusinessSolutionCard";
+import { motion } from "framer-motion";
 import { Link } from "lucide-react";
 
 type Language = "bn" | "en";
@@ -43,44 +43,94 @@ export default function DeveloperAPICard({ lang }: DeveloperAPICardProps) {
 
   const data = content[lang];
 
-  const APIMockup = () => (
-    <div
-      className="bg-gray-800 text-white rounded-lg p-4 shadow-inner font-mono text-xs"
-      data-oid="r17azz0"
-    >
-      <div
-        className="flex justify-between items-center mb-2"
-        data-oid="0ln0z6m"
-      >
-        <div className="text-gray-400" data-oid="dq1-v2o">
-          POST /v1/scores
+  return (
+    <div className="w-full h-full p-4 flex flex-col">
+      {/* Header - Compact */}
+      <div className="flex justify-between items-start mb-3">
+        <div>
+          <h3 className="text-lg font-bold text-[#0d0d0d] uppercase mb-1">
+            {data.category}
+          </h3>
+          <p className="text-xs text-[#0d0d0d]/70 max-w-2xl">
+            {data.description}
+          </p>
         </div>
-        <div className="text-green-400" data-oid="cnb59xz">
-          200 OK
-        </div>
+        <motion.a
+          href="#"
+          className="text-[#5daa80] font-medium flex items-center gap-1 hover:gap-2 transition-all text-xs group"
+          whileHover={{ scale: 1.05 }}
+        >
+          {data.cta}
+          <motion.svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            className="group-hover:translate-x-1 transition-transform"
+          >
+            <polyline points="9 18 15 12 9 6" />
+          </motion.svg>
+        </motion.a>
       </div>
-      <pre data-oid="oa8hp_x">
-        <code data-oid="kw.c5dx">
-          {`{
+
+      {/* API Display - Compact White Card */}
+      <motion.div
+        className="bg-white rounded-xl p-3 shadow-md mb-3 hover:shadow-lg transition-all duration-300"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+      >
+        <div
+          className="bg-gray-800 text-white rounded-lg p-3 shadow-inner font-mono text-xs"
+          data-oid="pnoy:9d"
+        >
+          <div
+            className="flex justify-between items-center mb-2"
+            data-oid="sv2kz3_"
+          >
+            <div className="text-gray-400" data-oid="etoxlwr">
+              POST /v1/scores
+            </div>
+            <div className="text-green-400" data-oid="rbclgg7">
+              200 OK
+            </div>
+          </div>
+          <pre data-oid="7ihfnj9">
+            <code data-oid="-6izamu">
+              {`{
   "score": 765,
   "status": "approved"
 }`}
-        </code>
-      </pre>
-    </div>
-  );
+            </code>
+          </pre>
+        </div>
+      </motion.div>
 
-  return (
-    <BusinessSolutionCard
-      icon={<Link size={32} color="white" data-oid="rewfdjd" />}
-      category={data.category}
-      title={data.title}
-      description={data.description}
-      features={data.features}
-      mockup={<APIMockup data-oid="lhp2ug8" />}
-      cta={data.cta}
-      lang={lang}
-      data-oid="-b0o-.v"
-    />
+      {/* Features Grid - Compact */}
+      <div className="flex-1 space-y-2">
+        {data.features.map((feature, index) => (
+          <motion.div
+            key={index}
+            className="flex items-start gap-2 p-2 rounded-lg bg-white/80 hover:bg-white transition-all duration-300 cursor-pointer group"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
+            whileHover={{ scale: 1.02 }}
+          >
+            <motion.div
+              className="w-6 h-6 bg-[#5daa80] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
+              whileHover={{ rotate: 5 }}
+            >
+              <Link size={14} color="white" />
+            </motion.div>
+            <p className="text-xs text-[#0d0d0d]/80 group-hover:text-[#0d0d0d] transition-colors leading-relaxed">
+              {feature}
+            </p>
+          </motion.div>
+        ))}
+      </div>
+    </div>
   );
 }

@@ -13,9 +13,9 @@ const BenefitsBurstIcon = ({
       height={size}
       viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
-      data-oid="1wyc114"
+      data-oid=".ih2z9c"
     >
-      <defs data-oid="2dq-kn.">
+      <defs data-oid=":xhw.06">
         {/* Gradient for the rays */}
         <linearGradient
           id="benefitGradient"
@@ -23,16 +23,16 @@ const BenefitsBurstIcon = ({
           y1="0%"
           x2="100%"
           y2="100%"
-          data-oid="goads1b"
+          data-oid="686es09"
         >
-          <stop offset="0%" stopColor="#6dbb00" data-oid="q1e8d5g" />
-          <stop offset="100%" stopColor="#5da600" data-oid="5.ltccm" />
+          <stop offset="0%" stopColor="#6dbb00" data-oid="xwth4--" />
+          <stop offset="100%" stopColor="#5da600" data-oid="gnr1kbs" />
         </linearGradient>
 
         {/* Radial gradient for center */}
-        <radialGradient id="centerGradient" data-oid="mww7tq6">
-          <stop offset="0%" stopColor="#7dd900" data-oid="f4ncfvy" />
-          <stop offset="100%" stopColor="#6dbb00" data-oid=":q23l2r" />
+        <radialGradient id="centerGradient" data-oid=".bevhvk">
+          <stop offset="0%" stopColor="#7dd900" data-oid="7gjhwi4" />
+          <stop offset="100%" stopColor="#6dbb00" data-oid="c7mga-n" />
         </radialGradient>
 
         {/* Shadow filter */}
@@ -42,28 +42,28 @@ const BenefitsBurstIcon = ({
           y="-50%"
           width="200%"
           height="200%"
-          data-oid="tdsr6d."
+          data-oid="mte9l46"
         >
           <feDropShadow
             dx="0"
             dy="1"
             stdDeviation="2"
             floodOpacity="0.2"
-            data-oid="7n9q03a"
+            data-oid="m9at8dg"
           />
         </filter>
 
         {/* Glow effect */}
-        <filter id="glow" data-oid="sw:ighm">
+        <filter id="glow" data-oid="23m8qzq">
           <feGaussianBlur
             stdDeviation="3"
             result="coloredBlur"
-            data-oid="d833rq."
+            data-oid="h3pkzmy"
           />
 
-          <feMerge data-oid="29bb_l7">
-            <feMergeNode in="coloredBlur" data-oid="0p::ted" />
-            <feMergeNode in="SourceGraphic" data-oid=".t52ony" />
+          <feMerge data-oid=".2tm0xr">
+            <feMergeNode in="coloredBlur" data-oid="v6nz.3k" />
+            <feMergeNode in="SourceGraphic" data-oid="vgtv38h" />
           </feMerge>
         </filter>
       </defs>
@@ -77,7 +77,7 @@ const BenefitsBurstIcon = ({
         stroke="#e5e7eb"
         strokeWidth="1"
         opacity="0.5"
-        data-oid="r6bfw_y"
+        data-oid="o5n-mfl"
       />
 
       {/* Benefit rays - 8 rays for good symmetry */}
@@ -104,13 +104,13 @@ const BenefitsBurstIcon = ({
         `;
 
         return (
-          <g key={angle} data-oid="4ez32-y">
+          <g key={angle} data-oid="_:eeln6">
             <path
               d={path}
               fill="url(#benefitGradient)"
               opacity={index % 2 === 0 ? 0.9 : 0.7}
               filter="url(#shadow)"
-              data-oid="x80djhw"
+              data-oid="pjh96ff"
             >
               {animated && (
                 <animateTransform
@@ -121,7 +121,7 @@ const BenefitsBurstIcon = ({
                   dur={`${3 + index * 0.2}s`}
                   repeatCount="indefinite"
                   additive="sum"
-                  data-oid="k0pr0g2"
+                  data-oid="uvx4tuz"
                 />
               )}
             </path>
@@ -145,7 +145,7 @@ const BenefitsBurstIcon = ({
             fill="#6dbb00"
             opacity="0.6"
             filter="url(#glow)"
-            data-oid=":h4m_8a"
+            data-oid="9-3ilqq"
           >
             {animated && (
               <animate
@@ -153,7 +153,7 @@ const BenefitsBurstIcon = ({
                 values="0.3;0.8;0.3"
                 dur={`${2 + index * 0.3}s`}
                 repeatCount="indefinite"
-                data-oid="8_5oave"
+                data-oid="2u14-2v"
               />
             )}
           </circle>
@@ -167,7 +167,7 @@ const BenefitsBurstIcon = ({
         r="15"
         fill="url(#centerGradient)"
         filter="url(#shadow)"
-        data-oid="-yd9zvo"
+        data-oid="4j8i29h"
       />
 
       {/* Inner ring */}
@@ -179,7 +179,7 @@ const BenefitsBurstIcon = ({
         stroke="#ffffff"
         strokeWidth="1.5"
         opacity="0.8"
-        data-oid="l-il_:n"
+        data-oid="6xj6eis"
       />
 
       {/* Center highlight */}
@@ -189,7 +189,7 @@ const BenefitsBurstIcon = ({
         r="8"
         fill="#ffffff"
         opacity="0.3"
-        data-oid="dumbam8"
+        data-oid="okl:wzb"
       />
 
       {/* Center checkmark or gift icon */}
@@ -200,7 +200,7 @@ const BenefitsBurstIcon = ({
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        data-oid="xntm2um"
+        data-oid="0zwfx7f"
       />
     </svg>
   );

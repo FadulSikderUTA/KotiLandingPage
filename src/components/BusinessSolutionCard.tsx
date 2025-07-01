@@ -26,86 +26,86 @@ export default function BusinessSolutionCard({
   lang,
 }: BusinessSolutionCardProps) {
   return (
-    <motion.div
-      className="bg-white rounded-2xl p-8 shadow-lg border border-[#0d0d0d]/5 hover:shadow-2xl transition-all duration-500 h-full group"
-      whileHover={{
-        scale: 1.02,
-        boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
-      }}
-      transition={{ duration: 0.3 }}
-      data-oid="ve-d.j7"
-    >
-      <div className="flex items-center gap-4 mb-8" data-oid="22hcwe1">
-        <motion.div
-          className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#6dbb00] to-[#5da600] flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300"
-          whileHover={{ scale: 1.1, rotate: 5 }}
-          transition={{ duration: 0.2 }}
-          data-oid="9r1ggr-"
-        >
+    <div className="w-full h-full p-6 flex flex-col" data-oid="5a-cu6w">
+      {/* Header */}
+      <div className="flex justify-between items-start mb-4" data-oid="zl3qpb2">
+        <div data-oid="w7zmkws">
+          <div className="flex items-center gap-3 mb-3" data-oid="_9ki4ka">
+            <motion.div
+              className="w-12 h-12 rounded-xl bg-[#5daa80] flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300"
+              whileHover={{ scale: 1.1, rotate: 5 }}
+              transition={{ duration: 0.2 }}
+              data-oid="y6-hqgq"
+            >
           {icon}
-        </motion.div>
-        <div className="flex-1" data-oid="cl6g940">
-          <div
-            className="text-xs uppercase tracking-wide text-[#6dbb00] font-semibold mb-1 transition-colors duration-300 group-hover:text-[#5da600]"
-            data-oid="m2538j6"
-          >
+            </motion.div>
+        <div>
+              <div className="text-xs uppercase tracking-wide text-[#5daa80] font-semibold mb-1" data-oid="osswmin">
             {category}
+              </div>
+              <h3 className="text-xl font-bold text-[#0d0d0d] uppercase" data-oid="yxxf0h8">
+                {title}
+              </h3>
+            </div>
           </div>
-          <h3
-            className="text-xl md:text-2xl lg:text-3xl font-bold text-[#0d0d0d] leading-tight group-hover:text-[#6dbb00] transition-colors duration-300"
-            data-oid="_q_yxct"
+          <p className="text-sm text-[#0d0d0d]/70 max-w-2xl" data-oid="vb9zgg2">
+            {description}
+          </p>
+        </div>
+        <motion.a
+          href="#"
+          className="text-[#5daa80] font-medium flex items-center gap-1 hover:gap-2 transition-all text-sm group"
+          whileHover={{ scale: 1.05 }}
+          data-oid="qj9usde"
+        >
+          {cta}
+          <motion.svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            className="group-hover:translate-x-1 transition-transform"
+            data-oid="83:hxle"
           >
-            {title}
-          </h3>
+            <polyline points="9 18 15 12 9 6" data-oid="i.u-rzi" />
+          </motion.svg>
+        </motion.a>
+      </div>
+
+      {/* Mockup Display Area */}
+      <div className="flex-1 mb-6" data-oid="imarbu6">
+        <div className="bg-white rounded-xl p-4 shadow-md mb-4 hover:shadow-lg transition-all duration-300" data-oid="pizyyo5">
+          {mockup}
         </div>
       </div>
-      <p
-        className="text-[#0d0d0d]/70 mb-8 leading-relaxed text-sm md:text-base lg:text-lg"
-        data-oid="2fm_nji"
-      >
-        {description}
-      </p>
-      <div
-        className="mb-8 rounded-xl bg-gray-50 p-6 shadow-inner border border-gray-100 group-hover:bg-gray-100 transition-all duration-300"
-        data-oid="dk1awgl"
-      >
-        {mockup}
-      </div>
-      <div className="space-y-4 mb-8" data-oid="x:7gv33">
+
+      {/* Features Grid */}
+      <div className="space-y-3" data-oid="5a-cu6w-features">
         {features.map((feature, index) => (
           <motion.div
             key={index}
-            className="flex items-start gap-3 group/feature"
+            className="flex items-start gap-3 p-3 rounded-lg bg-white/80 hover:bg-white transition-all duration-300 cursor-pointer group"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
-            data-oid="j:-szpc"
+            transition={{ duration: 0.4, delay: index * 0.1 }}
+            whileHover={{ scale: 1.02 }}
+            data-oid={`feature-${index}`}
           >
-            <div
-              className="w-2 h-2 rounded-full bg-[#6dbb00] mt-2.5 flex-shrink-0 group-hover/feature:scale-125 transition-transform duration-200"
-              data-oid="-wlqpxo"
-            ></div>
-            <span
-              className="text-sm md:text-base text-[#0d0d0d]/80 leading-relaxed group-hover/feature:text-[#0d0d0d] transition-colors duration-200"
-              data-oid="t0:6lc7"
+            <motion.div
+              className="w-8 h-8 bg-[#5daa80] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
+              whileHover={{ rotate: 5 }}
+              data-oid={`feature-icon-${index}`}
             >
+              <div className="w-2 h-2 rounded-full bg-white"></div>
+            </motion.div>
+            <p className="text-xs text-[#0d0d0d]/80 group-hover:text-[#0d0d0d] transition-colors leading-relaxed">
               {feature}
-            </span>
+            </p>
           </motion.div>
         ))}
       </div>
-      <motion.button
-        className="w-full bg-gradient-to-r from-[#6dbb00] to-[#5da600] text-white font-semibold py-4 px-6 rounded-xl hover:from-[#5da600] hover:to-[#4d9500] transition-all duration-300 shadow-lg hover:shadow-xl text-sm md:text-base lg:text-lg"
-        whileHover={{
-          scale: 1.02,
-          boxShadow: "0 10px 25px -5px rgba(109, 187, 0, 0.4)",
-        }}
-        whileTap={{ scale: 0.98 }}
-        transition={{ duration: 0.2 }}
-        data-oid="d753szl"
-      >
-        {cta}
-      </motion.button>
-    </motion.div>
+    </div>
   );
 }

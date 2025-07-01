@@ -1,104 +1,143 @@
+"use client";
+
 import { motion } from "framer-motion";
 
 const MorphingArrow = () => {
   return (
-    <div
-      className="relative w-64 h-16 flex items-center justify-center"
-      data-oid="v.3d2.a"
+    <motion.div
+      className="relative flex items-center justify-center"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.8 }}
     >
-      <motion.div className="relative" data-oid="xk9bz.9">
-        {/* Glow effect */}
-        <motion.div
-          className="absolute inset-0 bg-[#6dbb00] rounded-full blur-xl"
+      <svg
+        width="60"
+        height="24"
+        viewBox="0 0 60 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          {/* Arrow gradient */}
+          <linearGradient 
+            id="arrowGradient" 
+            x1="0%" 
+            y1="0%" 
+            x2="100%" 
+            y2="0%"
+          >
+            <stop offset="0%" stopColor="#6dbb00" />
+            <stop offset="100%" stopColor="#5da600" />
+          </linearGradient>
+
+          {/* Glow filter */}
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+            <feMerge> 
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+
+          {/* Moving light effect */}
+          <linearGradient id="lightEffect" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="transparent" />
+            <stop offset="50%" stopColor="rgba(255, 255, 255, 0.6)" />
+            <stop offset="100%" stopColor="transparent" />
+            <animateTransform
+              attributeName="gradientTransform"
+              type="translate"
+              values="-100 0; 100 0; -100 0"
+              dur="2s"
+              repeatCount="indefinite"
+            />
+          </linearGradient>
+        </defs>
+
+        {/* Arrow body with pulsing animation */}
+        <motion.path
+          d="M 5 12 L 45 12"
+          stroke="url(#arrowGradient)"
+          strokeWidth="3"
+          strokeLinecap="round"
+          filter="url(#glow)"
           animate={{
-            scale: [1, 1.5, 1],
-            opacity: [0.3, 0.6, 0.3],
+            strokeWidth: [3, 4, 3],
+            opacity: [0.8, 1, 0.8]
           }}
           transition={{
             duration: 2,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: "easeInOut"
           }}
-          data-oid="l45rw0o"
         />
 
-        {/* Main arrow */}
-        <motion.svg
-          width="200"
-          height="40"
-          viewBox="0 0 200 40"
+        {/* Arrow head with morphing animation */}
+        <motion.path
+          d="M 40 7 L 50 12 L 40 17"
+          stroke="url(#arrowGradient)"
+          strokeWidth="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           fill="none"
+          filter="url(#glow)"
           animate={{
-            filter: [
-              "drop-shadow(0 0 10px rgba(109, 187, 0, 0.5))",
-              "drop-shadow(0 0 20px rgba(109, 187, 0, 0.8))",
-              "drop-shadow(0 0 10px rgba(109, 187, 0, 0.5))",
-            ],
+            strokeWidth: [3, 4, 3],
+            x: [0, 2, 0]
           }}
           transition={{
-            duration: 2,
+            duration: 1.5,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: "easeInOut"
           }}
-          data-oid="7fgwm6:"
-        >
-          <motion.path
-            d="M 10 20 L 170 20 M 160 10 L 170 20 L 160 30"
-            stroke="url(#arrowGradient)"
-            strokeWidth="3"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            initial={{ pathLength: 0 }}
-            animate={{ pathLength: 1 }}
-            transition={{
-              duration: 2,
-              repeat: Infinity,
-              ease: "easeInOut",
-            }}
-            data-oid="f-qr61."
-          />
+        />
 
-          <defs data-oid="x.s74qk">
-            <linearGradient
-              id="arrowGradient"
-              x1="0%"
-              y1="0%"
-              x2="100%"
-              y2="0%"
-              data-oid="r7db37a"
-            >
-              <stop offset="0%" stopColor="#6dbb00" data-oid="kznbwn.">
-                <animate
-                  attributeName="stop-opacity"
-                  values="0;1;0"
-                  dur="2s"
-                  repeatCount="indefinite"
-                  data-oid="_k2ptqp"
-                />
-              </stop>
-              <stop offset="50%" stopColor="#5da600" data-oid="p4ll:ka">
-                <animate
-                  attributeName="stop-opacity"
-                  values="0;1;1;1;0"
-                  dur="2s"
-                  repeatCount="indefinite"
-                  data-oid="m._qe1u"
-                />
-              </stop>
-              <stop offset="100%" stopColor="#6dbb00" data-oid=".otv00l">
-                <animate
-                  attributeName="stop-opacity"
-                  values="0;0;1"
-                  dur="2s"
-                  repeatCount="indefinite"
-                  data-oid="pamdjrz"
-                />
-              </stop>
-            </linearGradient>
-          </defs>
-        </motion.svg>
-      </motion.div>
-    </div>
+        {/* Moving light overlay */}
+        <path
+          d="M 5 12 L 45 12"
+          stroke="url(#lightEffect)"
+          strokeWidth="3"
+          strokeLinecap="round"
+          opacity="0.7"
+        />
+
+        {/* Sparkle effects */}
+        {[20, 35].map((x, index) => (
+          <motion.circle
+            key={index}
+            cx={x}
+            cy="12"
+            r="1"
+            fill="#ffffff"
+            opacity="0"
+            animate={{
+              opacity: [0, 1, 0],
+              scale: [0.5, 1.2, 0.5]
+            }}
+            transition={{
+              duration: 1,
+              repeat: Infinity,
+              delay: index * 0.5,
+              ease: "easeInOut"
+            }}
+          />
+        ))}
+      </svg>
+
+      {/* Additional glow effect around the entire arrow */}
+      <motion.div
+        className="absolute inset-0 bg-gradient-to-r from-transparent via-[#6dbb00]/20 to-transparent rounded-full blur-sm"
+        animate={{
+          opacity: [0.3, 0.7, 0.3],
+          scale: [0.8, 1.1, 0.8]
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      />
+    </motion.div>
   );
 };
 

@@ -1,139 +1,121 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 interface CreditScoreGaugeIconProps {
-  size?: number;
   score?: number;
+  size?: number;
 }
 
-const CreditScoreGaugeIcon = ({
-  size = 40,
-  score = 765,
+const CreditScoreGaugeIcon = ({ 
+  score = 765, 
+  size = 40 
 }: CreditScoreGaugeIconProps) => {
   // Calculate needle rotation based on score (300-850 range)
   const calculateRotation = (score: number): number => {
     const normalizedScore = Math.max(300, Math.min(850, score));
     const percentage = (normalizedScore - 300) / (850 - 300);
     // -90 degrees (left) to 90 degrees (right) for semicircle
-    return -90 + percentage * 180;
+    return -90 + (percentage * 180);
   };
 
   const needleRotation = calculateRotation(score);
 
   return (
-    <svg
-      width={size}
-      height={size}
+    <motion.svg 
+      width={size} 
+      height={size} 
       viewBox="0 0 100 100"
-      xmlns="http://www.w3.org/2000/svg"
-      data-oid="6kbtjkp"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6 }}
     >
-      {/* Define gradient for the gauge */}
-      <defs data-oid="-qbe8rn">
-        <linearGradient
-          id="gaugeGradient"
-          x1="0%"
-          y1="0%"
-          x2="100%"
+      <defs>
+        {/* Gradient for the gauge arc */}
+        <linearGradient 
+          id="gaugeGradient" 
+          x1="0%" 
+          y1="0%" 
+          x2="100%" 
           y2="0%"
-          data-oid="9r7_vdu"
         >
-          <stop offset="0%" stopColor="#ef4444" data-oid="l8fjule" />{" "}
-          {/* red-500 */}
-          <stop offset="25%" stopColor="#fb923c" data-oid="4nexf99" />{" "}
-          {/* orange-400 */}
-          <stop offset="50%" stopColor="#facc15" data-oid="tyvur7e" />{" "}
-          {/* yellow-400 */}
-          <stop offset="75%" stopColor="#a3e635" data-oid="2z_iv8x" />{" "}
-          {/* lime-400 */}
-          <stop offset="100%" stopColor="#22c55e" data-oid="5qzb_r9" />{" "}
-          {/* green-500 */}
+          <stop offset="0%" stopColor="#ef4444" />   {/* red-500 */}
+          <stop offset="25%" stopColor="#fb923c" />  {/* orange-400 */}
+          <stop offset="50%" stopColor="#facc15" />  {/* yellow-400 */}
+          <stop offset="75%" stopColor="#a3e635" />  {/* lime-400 */}
+          <stop offset="100%" stopColor="#22c55e" /> {/* green-500 */}
         </linearGradient>
 
         {/* Shadow filter */}
-        <filter
-          id="shadow"
-          x="-50%"
-          y="-50%"
-          width="200%"
-          height="200%"
-          data-oid="e.-t6dr"
-        >
-          <feDropShadow
-            dx="0"
-            dy="1"
-            stdDeviation="2"
-            floodOpacity="0.2"
-            data-oid="jvbmqcq"
-          />
+        <filter id="shadow">
+          <feDropShadow dx="0" dy="1" stdDeviation="1" floodOpacity="0.3"/>
         </filter>
       </defs>
 
-      {/* Outer semicircle background */}
+      {/* Background arc (light gray) */}
       <path
-        d="M 15 70 A 35 35 0 0 1 85 70"
+        d="M 20 75 A 30 30 0 0 1 80 75"
         fill="none"
         stroke="#e5e7eb"
-        strokeWidth="12"
+        strokeWidth="8"
         strokeLinecap="round"
-        data-oid="2noofvi"
       />
 
       {/* Colored gauge arc */}
       <path
-        d="M 15 70 A 35 35 0 0 1 85 70"
+        d="M 20 75 A 30 30 0 0 1 80 75"
         fill="none"
         stroke="url(#gaugeGradient)"
-        strokeWidth="10"
+        strokeWidth="6"
         strokeLinecap="round"
-        data-oid="t82.k_y"
+        filter="url(#shadow)"
       />
-
-      {/* Gauge segments (optional decorative marks) */}
-      {[0, 30, 60, 90, 120, 150, 180].map((angle) => {
-        const rad = ((angle - 90) * Math.PI) / 180;
-        const x1 = 50 + 28 * Math.cos(rad);
-        const y1 = 70 + 28 * Math.sin(rad);
-        const x2 = 50 + 32 * Math.cos(rad);
-        const y2 = 70 + 32 * Math.sin(rad);
-
-        return (
-          <line
-            key={angle}
-            x1={x1}
-            y1={y1}
-            x2={x2}
-            y2={y2}
-            stroke="#9ca3af"
-            strokeWidth="1.5"
-            data-oid="38:0wjx"
-          />
-        );
-      })}
 
       {/* Center circle */}
       <circle
         cx="50"
-        cy="70"
-        r="6"
-        fill="#1f2937"
+        cy="75"
+        r="4"
+        fill="#374151"
         filter="url(#shadow)"
-        data-oid="s1mdlxn"
       />
 
-      {/* Needle */}
-      <g transform={`rotate(${needleRotation} 50 70)`} data-oid="nkcv582">
-        <path
-          d="M 50 70 L 48 68 L 48 40 L 50 38 L 52 40 L 52 68 Z"
-          fill="#1f2937"
+      {/* Animated needle */}
+      <motion.g
+        initial={{ rotate: -90 }}
+        animate={{ rotate: needleRotation }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+        style={{ transformOrigin: "50px 75px" }}
+      >
+        <line
+          x1="50"
+          y1="75"
+          x2="50"
+          y2="50"
+          stroke="#374151"
+          strokeWidth="2"
+          strokeLinecap="round"
           filter="url(#shadow)"
-          data-oid="xi:7hy8"
         />
+        
+        {/* Needle tip */}
+        <circle
+          cx="50"
+          cy="50"
+          r="1.5"
+          fill="#6dbb00"
+        />
+      </motion.g>
 
-        {/* Needle tip highlight */}
-        <circle cx="50" cy="38" r="2" fill="#6dbb00" data-oid="0415zm." />
-      </g>
-
-      {/* Center dot */}
-      <circle cx="50" cy="70" r="4" fill="#6dbb00" data-oid="f.7a__u" />
-    </svg>
+      {/* Center highlight */}
+      <circle
+        cx="50"
+        cy="75"
+        r="2"
+        fill="#ffffff"
+        opacity="0.8"
+      />
+    </motion.svg>
   );
 };
 

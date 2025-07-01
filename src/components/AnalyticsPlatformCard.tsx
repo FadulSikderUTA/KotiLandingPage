@@ -1,6 +1,6 @@
 "use client";
 
-import BusinessSolutionCard from "./BusinessSolutionCard";
+import { motion } from "framer-motion";
 import { BarChart } from "lucide-react";
 
 type Language = "bn" | "en";
@@ -45,61 +45,111 @@ export default function AnalyticsPlatformCard({
 
   const data = content[lang];
 
-  const AnalyticsMockup = () => (
-    <div className="bg-white rounded-lg p-4 shadow-inner" data-oid="qib.gsb">
-      <div
-        className="flex justify-between items-center mb-4"
-        data-oid="36apim3"
-      >
-        <div className="text-sm font-semibold text-gray-600" data-oid="lr8w5p.">
-          Growth Metrics
+  return (
+    <div className="w-full h-full p-4 flex flex-col">
+      {/* Header - Compact */}
+      <div className="flex justify-between items-start mb-3">
+        <div>
+          <h3 className="text-lg font-bold text-[#0d0d0d] uppercase mb-1">
+            {data.category}
+          </h3>
+          <p className="text-xs text-[#0d0d0d]/70 max-w-2xl">
+            {data.description}
+          </p>
         </div>
-        <div
-          className="text-xs text-green-600 font-semibold"
-          data-oid="1-66tyk"
+        <motion.a
+          href="#"
+          className="text-[#5daa80] font-medium flex items-center gap-1 hover:gap-2 transition-all text-xs group"
+          whileHover={{ scale: 1.05 }}
         >
-          +15%
-        </div>
+          {data.cta}
+          <motion.svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            className="group-hover:translate-x-1 transition-transform"
+          >
+            <polyline points="9 18 15 12 9 6" />
+          </motion.svg>
+        </motion.a>
       </div>
-      <div
-        className="h-32 bg-gray-100 rounded-lg flex items-end p-2"
-        data-oid="rgvw-qx"
+
+      {/* Analytics Display - Compact White Card */}
+      <motion.div
+        className="bg-white rounded-xl p-3 shadow-md mb-3 hover:shadow-lg transition-all duration-300"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
       >
-        <div
-          className="bg-gradient-to-t from-green-400 to-green-600 rounded-t-md w-1/4"
-          style={{ height: "60%" }}
-          data-oid="sa1h5ri"
-        ></div>
-        <div
-          className="bg-gradient-to-t from-green-400 to-green-600 rounded-t-md w-1/4"
-          style={{ height: "80%" }}
-          data-oid="m-.h04t"
-        ></div>
-        <div
-          className="bg-gradient-to-t from-green-400 to-green-600 rounded-t-md w-1/4"
-          style={{ height: "50%" }}
-          data-oid="j9mmitc"
-        ></div>
-        <div
-          className="bg-gradient-to-t from-green-400 to-green-600 rounded-t-md w-1/4"
-          style={{ height: "70%" }}
-          data-oid="vki-t4g"
-        ></div>
+        <div className="bg-white rounded-lg p-3 shadow-inner" data-oid="6fucdiy">
+          <div
+            className="flex justify-between items-center mb-3"
+            data-oid="1ijmcnk"
+          >
+            <div className="text-xs font-semibold text-gray-600" data-oid="yg4di2g">
+              Growth Metrics
+            </div>
+            <div
+              className="text-xs text-green-600 font-semibold"
+              data-oid="7rxj8-l"
+            >
+              +15%
+            </div>
+          </div>
+          <div
+            className="h-20 bg-gray-100 rounded-lg flex items-end p-2"
+            data-oid="s93e9l5"
+          >
+            <div
+              className="bg-gradient-to-t from-green-400 to-green-600 rounded-t-md w-1/4"
+              style={{ height: "60%" }}
+              data-oid="7kk7384"
+            ></div>
+            <div
+              className="bg-gradient-to-t from-green-400 to-green-600 rounded-t-md w-1/4"
+              style={{ height: "80%" }}
+              data-oid="vqgfrw2"
+            ></div>
+            <div
+              className="bg-gradient-to-t from-green-400 to-green-600 rounded-t-md w-1/4"
+              style={{ height: "50%" }}
+              data-oid="9eg2as_"
+            ></div>
+            <div
+              className="bg-gradient-to-t from-green-400 to-green-600 rounded-t-md w-1/4"
+              style={{ height: "70%" }}
+              data-oid="w1eqo2n"
+            ></div>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Features Grid - Compact */}
+      <div className="flex-1 space-y-2">
+        {data.features.map((feature, index) => (
+          <motion.div
+            key={index}
+            className="flex items-start gap-2 p-2 rounded-lg bg-white/80 hover:bg-white transition-all duration-300 cursor-pointer group"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
+            whileHover={{ scale: 1.02 }}
+          >
+            <motion.div
+              className="w-6 h-6 bg-[#5daa80] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
+              whileHover={{ rotate: 5 }}
+            >
+              <BarChart size={14} color="white" />
+            </motion.div>
+            <p className="text-xs text-[#0d0d0d]/80 group-hover:text-[#0d0d0d] transition-colors leading-relaxed">
+              {feature}
+            </p>
+          </motion.div>
+        ))}
       </div>
     </div>
-  );
-
-  return (
-    <BusinessSolutionCard
-      icon={<BarChart size={32} color="white" data-oid="l6.y0.r" />}
-      category={data.category}
-      title={data.title}
-      description={data.description}
-      features={data.features}
-      mockup={<AnalyticsMockup data-oid="mkpkak2" />}
-      cta={data.cta}
-      lang={lang}
-      data-oid="xta42ij"
-    />
   );
 }

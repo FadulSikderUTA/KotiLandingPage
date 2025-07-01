@@ -1,7 +1,7 @@
 "use client";
 
-import BusinessSolutionCard from "./BusinessSolutionCard";
-import { Lock } from "lucide-react";
+import { motion } from "framer-motion";
+import { Lock, Shield } from "lucide-react";
 
 type Language = "bn" | "en";
 
@@ -43,53 +43,110 @@ export default function FraudDetectionCard({ lang }: FraudDetectionCardProps) {
 
   const data = content[lang];
 
-  const SecurityMockup = () => (
-    <div className="bg-white rounded-lg p-4 shadow-inner" data-oid="r829kyu">
-      <div
-        className="flex justify-between items-center mb-4"
-        data-oid="dn4qcua"
-      >
-        <div className="text-sm font-semibold text-gray-600" data-oid="pc6j0fw">
-          System Status
+  return (
+    <div className="w-full h-full p-4 flex flex-col">
+      {/* Header - Compact */}
+      <div className="flex justify-between items-start mb-3">
+        <div>
+          <h3 className="text-lg font-bold text-[#0d0d0d] uppercase mb-1">
+            {data.category}
+          </h3>
+          <p className="text-xs text-[#0d0d0d]/70 max-w-2xl">
+            {data.description}
+          </p>
         </div>
-        <div
-          className="text-xs text-green-600 font-semibold"
-          data-oid="xjsrq7p"
+        <motion.a
+          href="#"
+          className="text-[#5daa80] font-medium flex items-center gap-1 hover:gap-2 transition-all text-xs group"
+          whileHover={{ scale: 1.05 }}
         >
-          Protected
-        </div>
+          {data.cta}
+          <motion.svg
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            className="group-hover:translate-x-1 transition-transform"
+          >
+            <polyline points="9 18 15 12 9 6" />
+          </motion.svg>
+        </motion.a>
       </div>
-      <div
-        className="grid grid-cols-2 gap-2 text-center text-xs"
-        data-oid="s4aj:cl"
+
+      {/* Security Display - Compact White Card */}
+      <motion.div
+        className="bg-white rounded-xl p-3 shadow-md mb-3 hover:shadow-lg transition-all duration-300"
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
       >
-        <div data-oid="p.l6kio">
-          <div className="font-bold text-green-600" data-oid="phc_2:b">
-            99.9%
+        <div className="bg-white rounded-lg p-3 shadow-inner" data-oid="f3gy62k">
+          <div
+            className="flex justify-between items-center mb-3"
+            data-oid="owfh4rh"
+          >
+            <div className="text-xs font-semibold text-gray-600" data-oid="zy3wbco">
+              Security Status
+            </div>
+            <div className="text-xs text-green-600 font-semibold flex items-center gap-1" data-oid="jxnhxue">
+              <Shield size={12} color="green" />
+              SECURE
+            </div>
           </div>
-          <div data-oid="fsy86-5">Detection Rate</div>
-        </div>
-        <div data-oid="_q2-kuq">
-          <div className="font-bold text-blue-600" data-oid="y-av0c4">
-            24/7
+          <div className="space-y-2" data-oid="hvyryqr">
+            <div className="flex justify-between items-center" data-oid="ilprtny">
+              <div className="text-xs text-gray-600" data-oid="3epg33s">
+                Threat Detection
+              </div>
+              <div className="text-xs text-green-600 font-semibold" data-oid="d5mwfv1">
+                99.9%
+              </div>
+            </div>
+            <div className="flex justify-between items-center" data-oid="ooojzn8">
+              <div className="text-xs text-gray-600" data-oid="xhz:uoz">
+                Fraud Blocked
+              </div>
+              <div className="text-xs text-red-600 font-semibold" data-oid="tggm8h3">
+                247 Today
+              </div>
+            </div>
+            <div className="flex justify-between items-center" data-oid="f6t.lni">
+              <div className="text-xs text-gray-600" data-oid="0n3y2jd">
+                Response Time
+              </div>
+              <div className="text-xs text-blue-600 font-semibold" data-oid="r-kbqkx">
+                0.3ms
+              </div>
+            </div>
           </div>
-          <div data-oid="7ci2kx9">Operational</div>
         </div>
+      </motion.div>
+
+      {/* Features Grid - Compact */}
+      <div className="flex-1 space-y-2">
+        {data.features.map((feature, index) => (
+          <motion.div
+            key={index}
+            className="flex items-start gap-2 p-2 rounded-lg bg-white/80 hover:bg-white transition-all duration-300 cursor-pointer group"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: index * 0.1 }}
+            whileHover={{ scale: 1.02 }}
+          >
+            <motion.div
+              className="w-6 h-6 bg-[#5daa80] rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
+              whileHover={{ rotate: 5 }}
+            >
+              <Shield size={14} color="white" />
+            </motion.div>
+            <p className="text-xs text-[#0d0d0d]/80 group-hover:text-[#0d0d0d] transition-colors leading-relaxed">
+              {feature}
+            </p>
+          </motion.div>
+        ))}
       </div>
     </div>
-  );
-
-  return (
-    <BusinessSolutionCard
-      icon={<Lock size={32} color="white" data-oid="572m02c" />}
-      category={data.category}
-      title={data.title}
-      description={data.description}
-      features={data.features}
-      mockup={<SecurityMockup data-oid="o7ur:96" />}
-      cta={data.cta}
-      lang={lang}
-      data-oid="fpn5x80"
-    />
   );
 }

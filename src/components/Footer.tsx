@@ -8,194 +8,203 @@ interface FooterProps {
 
 const Footer = ({ lang = "bn" }: FooterProps) => {
   return (
-    <footer
-      className="mt-auto flex w-full place-content-around gap-3 p-[5%] px-[10%] text-black max-md:flex-col bg-gray-50"
-      data-oid="91::8q-"
-    >
-      {/* Company Info Section */}
-      <div
-        className="flex h-full w-[250px] flex-col place-items-center gap-6 max-md:w-full"
-        data-oid="ft8odv6"
-      >
-        <Link
-          href={lang === "bn" ? "/" : "/en"}
-          className="text-3xl font-bold text-gray-800"
-          data-oid="wjd3n_."
-        >
-          Koti
-        </Link>
-        <div className="text-center text-gray-600" data-oid="58e432y">
-          {lang === "bn" ? (
-            <>
-              ঢাকা, বাংলাদেশ
-              <br data-oid="h14ud8l" />
-              ক্রেডিট স্কোরিং ব্যুরো
-              <br data-oid="5aopu:7" />
-              আপনার আর্থিক ভবিষ্যৎ
-            </>
-          ) : (
-            <>
-              Dhaka, Bangladesh
-              <br data-oid="tq9_1sa" />
-              Credit Scoring Bureau
-              <br data-oid="qmqdzc0" />
-              Your Financial Future
-            </>
-          )}
+    <footer className="bg-gray-900 text-white pt-16 pb-8" data-oid="xl8sjls">
+      <div className="max-w-7xl mx-auto px-8" data-oid="footer-container">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12" data-oid="footer-grid">
+          
+          {/* Company Info Section */}
+          <div className="col-span-1 md:col-span-1" data-oid="0klk02t">
+            <Link
+              href={lang === "bn" ? "/" : "/en"}
+              className="text-4xl font-bold text-white mb-6 block"
+              data-oid="yz5a-h6"
+            >
+              KOTI
+            </Link>
+            <p className="text-gray-300 mb-6 leading-relaxed" data-oid="ub_8cw-">
+              {lang === "bn" ? (
+                <>
+                  বাংলাদেশের প্রথম ডিজিটাল ক্রেডিট স্কোরিং প্ল্যাটফর্ম। 
+                  আপনার আর্থিক ভবিষ্যৎ গড়ুন আমাদের সাথে।
+                </>
+              ) : (
+                <>
+                  Bangladesh's first digital credit scoring platform. 
+                  Build your financial future with us.
+                </>
+              )}
+            </p>
+            
+            {/* Social Media Icons */}
+            <div className="space-y-4" data-oid="social-section">
+              <h3 className="text-lg font-semibold text-white" data-oid="h4rg0u-">
+                {lang === "bn" ? "আমাদের ফলো করুন" : "Follow Us"}
+              </h3>
+              <div className="flex gap-4" data-oid="_tsjcxn">
+                <a
+                  href="#"
+                  aria-label="Facebook"
+                  className="group p-3 bg-gray-800 rounded-full hover:bg-blue-600 transition-all duration-300"
+                  data-oid="rezy7uw"
+                >
+                  <svg className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  aria-label="Twitter"
+                  className="group p-3 bg-gray-800 rounded-full hover:bg-sky-500 transition-all duration-300"
+                  data-oid="4cicxt-"
+                >
+                  <svg className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  aria-label="Instagram"
+                  className="group p-3 bg-gray-800 rounded-full hover:bg-pink-600 transition-all duration-300"
+                  data-oid="i89p7cc"
+                >
+                  <svg className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.73-3.016-1.789L4.27 17.94l-1.4-1.4 2.741-1.164c-.684-.815-.684-2.02 0-2.835L2.87 11.378l1.4-1.4 1.164 2.742c1.297-1.059 3.164-.684 4.223.613s.684 3.164-.613 4.223c-.613.559-1.421.859-2.248.859z"/>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  aria-label="LinkedIn"
+                  className="group p-3 bg-gray-800 rounded-full hover:bg-blue-700 transition-all duration-300"
+                  data-oid="mlakg6t"
+                >
+                  <svg className="w-5 h-5 text-gray-300 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Services Section */}
+          <div className="space-y-6" data-oid="tgbm49w">
+            <h3 className="text-xl font-bold text-white" data-oid="bddm9k0">
+              {lang === "bn" ? "সেবাসমূহ" : "Services"}
+            </h3>
+            <div className="space-y-3" data-oid="-67rvcu">
+              <Link
+                href={lang === "bn" ? "/credit" : "/en/credit"}
+                className="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-oid="xkq5de4"
+              >
+                {lang === "bn" ? "ক্রেডিট স্কোর চেক" : "Credit Score Check"}
+              </Link>
+              <Link
+                href={lang === "bn" ? "/finance" : "/en/finance"}
+                className="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-oid="9.1xszc"
+              >
+                {lang === "bn" ? "ব্যক্তিগত ফিন্যান্স" : "Personal Finance"}
+              </Link>
+              <Link
+                href={lang === "bn" ? "/business" : "/en/business"}
+                className="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-oid="gtma223"
+              >
+                {lang === "bn" ? "ব্যবসায়িক সমাধান" : "Business Solutions"}
+              </Link>
+              <Link
+                href={lang === "bn" ? "/security" : "/en/security"}
+                className="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-oid="j4pjrt2"
+              >
+                {lang === "bn" ? "নিরাপত্তা ও বিশ্বাস" : "Security & Trust"}
+              </Link>
+            </div>
+          </div>
+
+          {/* Resources Section */}
+          <div className="space-y-6" data-oid="lo5ikol">
+            <h3 className="text-xl font-bold text-white" data-oid="0c5i9bv">
+              {lang === "bn" ? "সহায়তা" : "Resources"}
+            </h3>
+            <div className="space-y-3" data-oid="k_ve1b9">
+              <Link
+                href={lang === "bn" ? "/learn" : "/en/learn"}
+                className="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-oid="qy:6108"
+              >
+                {lang === "bn" ? "আর্থিক শিক্ষা" : "Financial Education"}
+              </Link>
+              <Link
+                href={lang === "bn" ? "/support" : "/en/support"}
+                className="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-oid="ak6jzlv"
+              >
+                {lang === "bn" ? "সাহায্য কেন্দ্র" : "Help Center"}
+              </Link>
+              <Link
+                href={lang === "bn" ? "/contact" : "/en/contact"}
+                className="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-oid="kf2smz2"
+              >
+                {lang === "bn" ? "যোগাযোগ" : "Contact Us"}
+              </Link>
+            </div>
+          </div>
+
+          {/* Legal Section */}
+          <div className="space-y-6" data-oid="legal-section">
+            <h3 className="text-xl font-bold text-white">
+              {lang === "bn" ? "আইনি তথ্য" : "Legal"}
+            </h3>
+            <div className="space-y-3">
+              <Link
+                href={lang === "bn" ? "/privacy" : "/en/privacy"}
+                className="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-oid="--l4bv:"
+              >
+                {lang === "bn" ? "গোপনীয়তা নীতি" : "Privacy Policy"}
+              </Link>
+              <Link
+                href={lang === "bn" ? "/terms" : "/en/terms"}
+                className="block text-gray-300 hover:text-white transition-colors duration-300"
+                data-oid="borom_h"
+              >
+                {lang === "bn" ? "সেবার শর্তাবলী" : "Terms of Service"}
+              </Link>
+              <Link
+                href={lang === "bn" ? "/security-policy" : "/en/security-policy"}
+                className="block text-gray-300 hover:text-white transition-colors duration-300"
+              >
+                {lang === "bn" ? "নিরাপত্তা নীতি" : "Security Policy"}
+              </Link>
+            </div>
+          </div>
         </div>
-        <div
-          className="mt-3 text-lg font-semibold text-gray-800"
-          data-oid="tlwn52w"
-        >
-          {lang === "bn" ? "আমাদের ফলো করুন" : "Follow us"}
-        </div>
-        <div className="flex gap-4 text-2xl" data-oid="u1p2xzh">
-          <a
-            href="#"
-            aria-label="Facebook"
-            className="text-gray-600 hover:text-green-600 transition-colors duration-300"
-            data-oid="qluo9ss"
-          >
-            <i className="bi bi-facebook" data-oid="y3wk3r.">
-              📘
-            </i>
-          </a>
-          <a
-            href="#"
-            aria-label="Twitter"
-            className="text-gray-600 hover:text-green-600 transition-colors duration-300"
-            data-oid="hsp-mcl"
-          >
-            <i className="bi bi-twitter" data-oid="s2-p5kt">
-              🐦
-            </i>
-          </a>
-          <a
-            href="#"
-            className="text-gray-600 hover:text-green-600 transition-colors duration-300"
-            aria-label="Instagram"
-            data-oid="u_6k05x"
-          >
-            <i className="bi bi-instagram" data-oid="vkebv.5">
-              📷
-            </i>
-          </a>
-          <a
-            href="#"
-            className="text-gray-600 hover:text-green-600 transition-colors duration-300"
-            aria-label="LinkedIn"
-            data-oid="ubmr9nk"
-          >
-            <i className="bi bi-linkedin" data-oid="wq:l9z.">
-              💼
-            </i>
-          </a>
+
+        {/* Bottom Border */}
+        <div className="border-t border-gray-800 pt-8" data-oid="footer-bottom">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            
+            {/* Copyright */}
+            <div className="text-gray-400 text-sm">
+              © 2025 KOTI. {lang === "bn" ? "সমস্ত অধিকার সংরক্ষিত।" : "All rights reserved."}
+            </div>
+
+            {/* Location & Additional Info */}
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-gray-400 text-sm">
+              <span>
+                {lang === "bn" ? "ঢাকা, বাংলাদেশ" : "Dhaka, Bangladesh"}
+              </span>
+              <span className="hidden md:block">•</span>
+              <span>
+                {lang === "bn" ? "ক্রেডিট স্কোরিং ব্যুরো" : "Credit Scoring Bureau"}
+              </span>
+            </div>
+          </div>
         </div>
       </div>
-
-      {/* Services Section */}
-      <div
-        className="flex h-full w-[250px] flex-col gap-4 max-md:w-full"
-        data-oid="0gk38p8"
-      >
-        <h2
-          className="text-3xl max-md:text-xl font-semibold text-gray-800"
-          data-oid="0dtld3v"
-        >
-          {lang === "bn" ? "সেবাসমূহ" : "Services"}
-        </h2>
-        <div className="flex flex-col gap-3 max-md:text-sm" data-oid="7vr8_1:">
-          <Link
-            href={lang === "bn" ? "/credit" : "/en/credit"}
-            className="footer-link text-gray-600 hover:text-green-600 transition-colors duration-300"
-            data-oid="o38s976"
-          >
-            {lang === "bn" ? "ক্রেডিট স্কোর চেক" : "Credit Score Check"}
-          </Link>
-          <Link
-            href={lang === "bn" ? "/finance" : "/en/finance"}
-            className="footer-link text-gray-600 hover:text-green-600 transition-colors duration-300"
-            data-oid="b_84bs9"
-          >
-            {lang === "bn" ? "ব্যক্তিগত ফিন্যান্স" : "Personal Finance"}
-          </Link>
-          <Link
-            href={lang === "bn" ? "/business" : "/en/business"}
-            className="footer-link text-gray-600 hover:text-green-600 transition-colors duration-300"
-            data-oid="e.phv-9"
-          >
-            {lang === "bn" ? "ব্যবসায়িক সমাধান" : "Business Solutions"}
-          </Link>
-          <Link
-            href={lang === "bn" ? "/security" : "/en/security"}
-            className="footer-link text-gray-600 hover:text-green-600 transition-colors duration-300"
-            data-oid="yev4tzp"
-          >
-            {lang === "bn" ? "নিরাপত্তা ও বিশ্বাস" : "Security & Trust"}
-          </Link>
-        </div>
-      </div>
-
-      {/* Resources Section */}
-      <div
-        className="flex h-full w-[250px] flex-col gap-4 max-md:w-full"
-        data-oid="h:hhk13"
-      >
-        <h2
-          className="text-3xl max-md:text-xl font-semibold text-gray-800"
-          data-oid="qld3l:4"
-        >
-          {lang === "bn" ? "সহায়তা" : "Resources"}
-        </h2>
-        <div className="flex flex-col gap-3 max-md:text-sm" data-oid="kz_mola">
-          <Link
-            href={lang === "bn" ? "/learn" : "/en/learn"}
-            className="footer-link text-gray-600 hover:text-green-600 transition-colors duration-300"
-            data-oid=".s2hcoz"
-          >
-            {lang === "bn" ? "আর্থিক শিক্ষা" : "Financial Education"}
-          </Link>
-          <Link
-            href={lang === "bn" ? "/support" : "/en/support"}
-            className="footer-link text-gray-600 hover:text-green-600 transition-colors duration-300"
-            data-oid="mu9z24_"
-          >
-            {lang === "bn" ? "সাহায্য কেন্দ্র" : "Help Center"}
-          </Link>
-          <Link
-            href={lang === "bn" ? "/support" : "/en/support"}
-            className="footer-link text-gray-600 hover:text-green-600 transition-colors duration-300"
-            data-oid="a6a82wd"
-          >
-            {lang === "bn" ? "যোগাযোগ" : "Contact Us"}
-          </Link>
-          <Link
-            href={lang === "bn" ? "/privacy" : "/en/privacy"}
-            className="footer-link text-gray-600 hover:text-green-600 transition-colors duration-300"
-            data-oid="jsvtsbl"
-          >
-            {lang === "bn" ? "গোপনীয়তা নীতি" : "Privacy Policy"}
-          </Link>
-          <Link
-            href={lang === "bn" ? "/terms" : "/en/terms"}
-            className="footer-link text-gray-600 hover:text-green-600 transition-colors duration-300"
-            data-oid="7d4198d"
-          >
-            {lang === "bn" ? "সেবার শর্তাবলী" : "Terms of Service"}
-          </Link>
-        </div>
-      </div>
-
-      <style jsx data-oid="dxot14p">{`
-        .footer-link {
-          color: #4b5563;
-          transition: color 0.3s;
-        }
-
-        .footer-link:hover {
-          color: #16a34a;
-        }
-      `}</style>
     </footer>
   );
 };
