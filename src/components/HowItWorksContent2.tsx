@@ -696,7 +696,7 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
   /* ------------------------------------------------------------------ */
   return (
     <section
-      className="relative min-h-screen w-full flex items-center justify-center px-3 py-3 bg-[#fdfdfd] z-20"
+      className="relative min-h-screen w-full flex items-center justify-center px-3 py-3 bg-[#fdfdfd] z-20 rounded-[48px]"
       data-oid="h18hj1i"
     >
       {/* Card Container - Immediately stacks on top of Hero */}
