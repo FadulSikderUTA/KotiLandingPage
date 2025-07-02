@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 type Language = "bn" | "en";
 
 export default function Home() {
-  const [lang, setLang] = useState<Language>("bn");
+  const [lang, setLang] = useState<Language>("en");
 
   return (
     <main
