@@ -103,7 +103,7 @@ const CreditScoreGaugeIcon = ({
           cx="50"
           cy="50"
           r="1.5"
-          fill="#6dbb00"
+          fill="#5daa80"
         />
       </motion.g>
 

@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "Koti",
-  description: "Landing page for Koti",
+  title: "Koti Credit Bureau | Your Trusted Credit Score Partner",
+  description: "Koti Credit Bureau provides reliable credit score services for businesses and individuals in Bangladesh. Check your Koti score and build your financial future.",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 export default function RootLayout({
   children,

@@ -26,7 +26,7 @@ const MorphingArrow = () => {
             x2="100%" 
             y2="0%"
           >
-            <stop offset="0%" stopColor="#6dbb00" />
+            <stop offset="0%" stopColor="#5daa80" />
             <stop offset="100%" stopColor="#5da600" />
           </linearGradient>
 
@@ -126,7 +126,7 @@ const MorphingArrow = () => {
 
       {/* Additional glow effect around the entire arrow */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-transparent via-[#6dbb00]/20 to-transparent rounded-full blur-sm"
+        className="absolute inset-0 bg-gradient-to-r from-transparent via-[#5daa80]/20 to-transparent rounded-full blur-sm"
         animate={{
           opacity: [0.3, 0.7, 0.3],
           scale: [0.8, 1.1, 0.8]

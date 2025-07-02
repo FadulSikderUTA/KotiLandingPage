@@ -25,14 +25,14 @@ const BenefitsBurstIcon = ({
           y2="100%"
           data-oid="686es09"
         >
-          <stop offset="0%" stopColor="#6dbb00" data-oid="xwth4--" />
+          <stop offset="0%" stopColor="#5daa80" data-oid="xwth4--" />
           <stop offset="100%" stopColor="#5da600" data-oid="gnr1kbs" />
         </linearGradient>
 
         {/* Radial gradient for center */}
         <radialGradient id="centerGradient" data-oid=".bevhvk">
           <stop offset="0%" stopColor="#7dd900" data-oid="7gjhwi4" />
-          <stop offset="100%" stopColor="#6dbb00" data-oid="c7mga-n" />
+          <stop offset="100%" stopColor="#5daa80" data-oid="c7mga-n" />
         </radialGradient>
 
         {/* Shadow filter */}
@@ -142,7 +142,7 @@ const BenefitsBurstIcon = ({
             cx={cx}
             cy={cy}
             r="4"
-            fill="#6dbb00"
+            fill="#5daa80"
             opacity="0.6"
             filter="url(#glow)"
             data-oid="9-3ilqq"

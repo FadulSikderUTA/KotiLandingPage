@@ -339,7 +339,7 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
         <button
           key={idx}
           onClick={() => onDotClick(idx)}
-          className={`w-3 h-3 rounded-full transition-all ${idx === currentIndex ? "bg-[#6dbb00] scale-125" : "bg-gray-300 hover:bg-gray-400"}`}
+          className={`w-3 h-3 rounded-full transition-all ${idx === currentIndex ? "bg-[#5daa80] scale-125" : "bg-gray-300 hover:bg-gray-400"}`}
           data-oid="90byls4"
         />
       ))}
@@ -553,7 +553,7 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
         {/* Enhanced glow effect during drag */}
         {isDragging && (
           <motion.div
-            className="absolute inset-0 bg-gradient-to-t from-[#6dbb00]/30 via-transparent to-transparent"
+            className="absolute inset-0 bg-gradient-to-t from-[#5daa80]/30 via-transparent to-transparent"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.2 }}
@@ -621,7 +621,7 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
                       {activity.description}
                     </span>
                     <span
-                      className="bg-[#6dbb00] text-white rounded-full px-2 py-0.5 text-xs font-semibold"
+                      className="bg-[#5daa80] text-white rounded-full px-2 py-0.5 text-xs font-semibold"
                       data-oid="vr94lso"
                     >
                       +
@@ -674,7 +674,7 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
                 </span>
                 {showPoints && card.points && (
                   <span
-                    className="bg-[#6dbb00] text-white rounded-full px-2 py-0.5 text-xs font-semibold"
+                    className="bg-[#5daa80] text-white rounded-full px-2 py-0.5 text-xs font-semibold"
                     data-oid="ip0rj1s"
                   >
                     +
@@ -747,7 +747,7 @@ export default function HowItWorksContent2({ lang }: HowItWorksContent2Props) {
             <div className="relative" data-oid="fpa7ptz">
               {/* Background gradient line */}
               <div
-                className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#6dbb00]/30 to-transparent transform -translate-y-1/2"
+                className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#5daa80]/30 to-transparent transform -translate-y-1/2"
                 data-oid="1f3cu.."
               ></div>
 

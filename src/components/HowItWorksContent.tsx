@@ -278,7 +278,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
 
         {/* Glow effect for center card */}
         <motion.div
-          className="absolute inset-0 bg-gradient-to-t from-[#6dbb00]/20 via-transparent to-transparent"
+          className="absolute inset-0 bg-gradient-to-t from-[#5daa80]/20 via-transparent to-transparent"
           animate={{
             opacity: isCenter ? 1 : 0,
           }}
@@ -336,7 +336,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
               </motion.div>
               {showPoints && (
                 <motion.div
-                  className={`bg-gradient-to-r from-[#6dbb00] to-[#5da600] text-white px-4 py-2 rounded-2xl font-bold ${isCenter ? "text-lg" : "text-md"} shadow-lg`}
+                  className={`bg-gradient-to-r from-[#5daa80] to-[#5da600] text-white px-4 py-2 rounded-2xl font-bold ${isCenter ? "text-lg" : "text-md"} shadow-lg`}
                   whileHover={{ scale: 1.1 }}
                   animate={{
                     scale: isCenter ? 1 : 0.9,
@@ -390,7 +390,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                 data-oid="i.a-aze"
               >
                 <div
-                  className="relative bg-gradient-to-br from-[#6dbb00] to-[#5da600] rounded-3xl p-8 shadow-2xl border border-white/20 backdrop-blur-sm"
+                  className="relative bg-gradient-to-br from-[#5daa80] to-[#5da600] rounded-3xl p-8 shadow-2xl border border-white/20 backdrop-blur-sm"
                   data-oid="gygwz7s"
                 >
                   <div
@@ -432,7 +432,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                 <div className="relative flex items-center" data-oid=".z_je:_">
                   {/* Animated line with moving light effect */}
                   <div
-                    className="w-20 h-1 bg-gradient-to-r from-[#6dbb00] to-[#5da600] rounded-full relative overflow-hidden"
+                    className="w-20 h-1 bg-gradient-to-r from-[#5daa80] to-[#5da600] rounded-full relative overflow-hidden"
                     data-oid="whtf5sd"
                   >
                     <motion.div
@@ -462,7 +462,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                     data-oid="pp7ot:0"
                   >
                     <div
-                      className="w-0 h-0 border-t-6 border-b-6 border-l-10 border-t-transparent border-b-transparent border-l-[#6dbb00] filter drop-shadow-sm"
+                      className="w-0 h-0 border-t-6 border-b-6 border-l-10 border-t-transparent border-b-transparent border-l-[#5daa80] filter drop-shadow-sm"
                       data-oid=".h-s04z"
                     ></div>
                   </motion.div>
@@ -478,7 +478,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                 data-oid="hlwarb7"
               >
                 <div
-                  className="relative bg-gradient-to-br from-[#6dbb00] to-[#5da600] rounded-3xl p-8 shadow-2xl border border-white/20 backdrop-blur-sm"
+                  className="relative bg-gradient-to-br from-[#5daa80] to-[#5da600] rounded-3xl p-8 shadow-2xl border border-white/20 backdrop-blur-sm"
                   data-oid="nvh_cf2"
                 >
                   <div
@@ -541,7 +541,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                     onClick={() => setBuildIndex(index)}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
                       index === buildIndex
-                        ? "bg-[#6dbb00] scale-125"
+                        ? "bg-[#5daa80] scale-125"
                         : "bg-gray-300 hover:bg-gray-400"
                     }`}
                     whileHover={{ scale: 1.2 }}
@@ -577,7 +577,7 @@ export default function HowItWorksContent({ lang }: HowItWorksContentProps) {
                     onClick={() => setBenefitsIndex(index)}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
                       index === benefitsIndex
-                        ? "bg-[#6dbb00] scale-125"
+                        ? "bg-[#5daa80] scale-125"
                         : "bg-gray-300 hover:bg-gray-400"
                     }`}
                     whileHover={{ scale: 1.2 }}

@@ -99,7 +99,7 @@ const Header = ({ lang, setLang }: HeaderProps) => {
           {/* Logo - Click to go to Hero section */}
           <button
             onClick={() => scrollToSection(1)}
-            className="text-2xl font-bold text-white hover:text-[#6dbb00] transition-colors duration-300 flex-shrink-0 cursor-pointer"
+            className="text-2xl font-bold text-white hover:text-[#5daa80] transition-colors duration-300 flex-shrink-0 cursor-pointer"
             data-oid="el86tr_"
           >
             Koti
@@ -109,20 +109,20 @@ const Header = ({ lang, setLang }: HeaderProps) => {
           <nav className="hidden lg:flex items-center gap-8 mx-8">
             <button
               onClick={() => scrollToSection(2)}
-              className="text-white/90 hover:text-[#6dbb00] transition-colors duration-300 font-medium text-sm cursor-pointer"
+              className="text-white/90 hover:text-[#5daa80] transition-colors duration-300 font-medium text-sm cursor-pointer"
               data-oid="1em8vv-"
             >
               {lang === "bn" ? "কোটি কিভাবে কাজ করে" : "How Koti Work"}
             </button>
             <button
               onClick={() => scrollToSection(3)}
-              className="text-white/90 hover:text-[#6dbb00] transition-colors duration-300 font-medium text-sm cursor-pointer"
+              className="text-white/90 hover:text-[#5daa80] transition-colors duration-300 font-medium text-sm cursor-pointer"
               data-oid="bb-bnvj"
             >
               {lang === "bn" ? "ব্যবসায়িক সমাধান" : "Business Solution"}
             </button>
             <Link
-              className="text-white/90 hover:text-[#6dbb00] transition-colors duration-300 font-medium text-sm"
+              className="text-white/90 hover:text-[#5daa80] transition-colors duration-300 font-medium text-sm"
               href="#support"
               data-oid="sp3.msi"
             >
@@ -157,7 +157,7 @@ const Header = ({ lang, setLang }: HeaderProps) => {
                 onClick={() => setLang("bn")}
                 className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 ${
                   lang === "bn"
-                    ? "bg-[#6dbb00] text-black"
+                    ? "bg-[#5daa80] text-black"
                     : "text-white/80 hover:text-white"
                 }`}
               >
@@ -167,7 +167,7 @@ const Header = ({ lang, setLang }: HeaderProps) => {
                 onClick={() => setLang("en")}
                 className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 ${
                   lang === "en"
-                    ? "bg-[#6dbb00] text-black"
+                    ? "bg-[#5daa80] text-black"
                     : "text-white/80 hover:text-white"
                 }`}
               >
@@ -216,18 +216,18 @@ const Header = ({ lang, setLang }: HeaderProps) => {
               <nav className="flex flex-col gap-4">
                 <button
                   onClick={() => scrollToSection(2)}
-                  className="text-white/90 hover:text-[#6dbb00] transition-colors duration-300 font-medium py-2 text-left cursor-pointer"
+                  className="text-white/90 hover:text-[#5daa80] transition-colors duration-300 font-medium py-2 text-left cursor-pointer"
                 >
                   {lang === "bn" ? "কোটি কিভাবে কাজ করে" : "How Koti Work"}
                 </button>
                 <button
                   onClick={() => scrollToSection(3)}
-                  className="text-white/90 hover:text-[#6dbb00] transition-colors duration-300 font-medium py-2 text-left cursor-pointer"
+                  className="text-white/90 hover:text-[#5daa80] transition-colors duration-300 font-medium py-2 text-left cursor-pointer"
                 >
                   {lang === "bn" ? "ব্যবসায়িক সমাধান" : "Business Solution"}
                 </button>
                 <Link
-                  className="text-white/90 hover:text-[#6dbb00] transition-colors duration-300 font-medium py-2"
+                  className="text-white/90 hover:text-[#5daa80] transition-colors duration-300 font-medium py-2"
                   href="#support"
                   onClick={() => setIsMenuOpen(false)}
                 >
