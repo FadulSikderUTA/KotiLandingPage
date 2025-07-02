@@ -43,7 +43,9 @@ const Footer = ({ lang = "bn" }: FooterProps) => {
               </h3>
               <div className="flex gap-4" data-oid="_tsjcxn">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=61576026151384"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Facebook"
                   className="group p-3 bg-gray-800 rounded-full hover:bg-blue-600 transition-all duration-300"
                   data-oid="rezy7uw"
@@ -73,7 +75,9 @@ const Footer = ({ lang = "bn" }: FooterProps) => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/koti-credit-bureau/about/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="LinkedIn"
                   className="group p-3 bg-gray-800 rounded-full hover:bg-blue-700 transition-all duration-300"
                   data-oid="mlakg6t"
