@@ -44,7 +44,7 @@ export function validateEmail(email: string): { valid: boolean; error?: string }
     if (error instanceof z.ZodError) {
       return {
         valid: false,
-        error: error.errors[0]?.message || 'Invalid email format'
+        error: error.issues[0]?.message || 'Invalid email format'
       }
     }
     return {
