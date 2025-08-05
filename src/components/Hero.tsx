@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 type Language = "bn" | "en";
 
@@ -191,24 +192,26 @@ const Hero = ({ lang }: HeroProps) => {
                 </div>
 
                 {/* AISales-style button */}
-                <motion.button
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.8 }}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center gap-2 sm:gap-3 rounded-full bg-[#5daa80] px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 text-base sm:text-lg lg:text-xl font-semibold text-[#0d0d0d] shadow-lg transition-all duration-300 hover:bg-[#4d8a6a] hover:shadow-xl hover:shadow-[#5daa80]/25"
-                  data-oid="cm4zc1m"
-                >
-                  <span data-oid="ehdcmze">{currentContent.button}</span>
-                  <motion.span 
-                    animate={{ x: [0, 5, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity }}
-                    data-oid="q96m2o8"
+                <Link href="/about">
+                  <motion.button
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.8 }}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="inline-flex items-center gap-2 sm:gap-3 rounded-full bg-[#5daa80] px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 text-base sm:text-lg lg:text-xl font-semibold text-[#0d0d0d] shadow-lg transition-all duration-300 hover:bg-[#4d8a6a] hover:shadow-xl hover:shadow-[#5daa80]/25"
+                    data-oid="cm4zc1m"
                   >
-                    →
-                  </motion.span>
-                </motion.button>
+                    <span data-oid="ehdcmze">{currentContent.button}</span>
+                    <motion.span 
+                      animate={{ x: [0, 5, 0] }}
+                      transition={{ duration: 1.5, repeat: Infinity }}
+                      data-oid="q96m2o8"
+                    >
+                      →
+                    </motion.span>
+                  </motion.button>
+                </Link>
               </motion.div>
 
               {/* Right column - Koti Score visualization - BIGGER CONTAINER */}

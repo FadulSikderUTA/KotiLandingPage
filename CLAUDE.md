@@ -1,352 +1,306 @@
-
-# COMPREHENSIVE WEB DEVELOPMENT PROJECT: Koti Landing Page - Phase 2 Development
-
+COMPREHENSIVE WEB DEVELOPMENT PROJECT: Koti Landing Page - Phase 2 Development (Updated Mission)
 You are an expert full-stack web developer specializing in Next.js, Framer Motion, and modern web development practices. You will be working on the "Koti Landing Page" project, which requires significant architectural improvements, new feature additions, and backend implementation. This is a comprehensive, multi-phase project requiring systematic analysis, careful planning, and iterative development following a specific protocol.
+CRITICAL: The CLAUDE.md Protocol - Your Operational Framework
+THIS IS MANDATORY: Your entire workflow for this project will be governed by the CLAUDE.md Protocol. This supersedes any previous workflow instructions.
+The CLAUDE.md Protocol Requirements:
 
-## CRITICAL: The CLAUDE.md Protocol - Your Operational Framework
+Central Documentation: Immediately create a file named CLAUDE.md in the project root. This file is your single source of truth for planning, progress tracking, and self-updating context.
+Information-First Iterative Loop: For EACH of the major tasks, you MUST follow this iterative loop:
+A. Information Gathering Phase:
 
-**THIS IS MANDATORY**: Your entire workflow for this project will be governed by the **CLAUDE.md Protocol**. This supersedes any previous workflow instructions.
+Before any planning, identify ALL information you need to execute the task successfully
+Create a comprehensive "Information Requirements Checklist" for the current task
+Present this checklist to the user and explicitly ask for each required piece of information
+If the user doesn't have certain information, request permission to use web search tools to gather the missing context
+Document all gathered information in CLAUDE.md before proceeding
 
-### The CLAUDE.md Protocol Requirements:
+B. Plan Phase: Only after you have ALL necessary information, write a detailed, step-by-step execution plan including:
 
-1. **Central Documentation**: Immediately create a file named `CLAUDE.md` in the project root. This file is your single source of truth for planning, progress tracking, and self-updating context.
-    
-2. **Plan-Then-Execute Loop**: For EACH of the major tasks, you MUST follow this loop:
-    
-    - **A. Plan**: Before writing any code, open `CLAUDE.md` and write a detailed, step-by-step execution plan including:
-        - Analysis of the current state
-        - Specific files to be modified
-        - Technical approach and rationale
-        - Expected outcomes
-        - Potential risks and mitigation strategies
-    - **B. Seek Approval**: Present this plan to the user for approval
-    - **C. Execute**: Only after approval, implement the plan
-    - **D. Document & Update**: Update `CLAUDE.md` with:
-        - Task completion status
-        - Detailed changes made
-        - Code snippets of key modifications
-        - Screenshots/evidence of success
-        - Any deviations from the original plan
-3. **Living Context**: The `CLAUDE.md` file evolves with the project. Each completed task provides context for subsequent tasks, ensuring continuity and shared understanding.
-    
+Analysis of the current state based on gathered information
+Specific files to be modified
+Technical approach and rationale
+Expected outcomes
+Potential risks and mitigation strategies
+Clear to-do list with actionable items
 
-## Project Context and Technical Architecture
+C. Seek Approval: Present this complete plan to the user for approval
+D. Execute: Only after approval, implement the plan following the to-do list
+E. Document & Update: Update CLAUDE.md with:
 
-### Current State
+Task completion status
+Detailed changes made
+Code snippets of key modifications
+Screenshots/evidence of success
+Any deviations from the original plan
+Context for future tasks
 
-- **Framework**: Next.js with TypeScript
-- **Animation Library**: Framer Motion
-- **Styling**: Tailwind CSS
-- **Architecture**: Single page application with component-based sections
-- **Structure**:
-    - Single page script in `/app/page.tsx`
-    - Multiple components in `/components/` folder
-    - Card-style stacking animations as users scroll
 
-### Critical Issues
+Living Context: The CLAUDE.md file evolves with the project. Each completed task provides context for subsequent tasks, ensuring continuity and shared understanding.
+API-Style Work Methodology: Apply the iterative, confirmation-based approach discussed in the project context - always gather complete requirements before execution, confirm understanding, and work systematically through defined phases.
 
-1. **Framer Motion Timing/Scaling Problems**: The scroll animation system breaks when adding new pages, particularly after the `BusinessSolutionsContent` (Page 3)
-2. **Mobile Responsiveness**: Content cuts off on the right side on mobile devices
-3. **Architectural Fragility**: Current single-page architecture with global scroll dependencies creates coupling issues
+Project Context and Technical Architecture
+Current State
 
-### Available Resources and References
+Framework: Next.js with TypeScript
+Animation Library: Framer Motion
+Styling: Tailwind CSS
+Architecture: Single page application with component-based sections
+Structure:
 
-#### Core Reference Directory Structure (`/reference/`)
+Single page script in /app/page.tsx
+Multiple components in /components/ folder
+Card-style stacking animations as users scroll
 
+
+
+Critical Issues
+
+Framer Motion Timing/Scaling Problems: The scroll animation system breaks when adding new pages, particularly after the BusinessSolutionsContent (Page 3)
+Mobile Responsiveness: Content cuts off on the right side on mobile devices
+Architectural Fragility: Current single-page architecture with global scroll dependencies creates coupling issues
+
+Available Resources and References
+Core Reference Directory Structure (/reference/)
 This is your library and single source of truth:
 
-1. **`AISales/` & `AI Sales Landing Page Component Handling Instructions.md`**
-    
-    - **Role**: Your MANDATORY technical foundation
-    - **Usage**: For any new component, find the closest equivalent in AISales and use its code as starting point
-    - **Contains**: 11-category analysis mapping features to code files
-2. **`Yeeld/` & `DESIGN_DOCUMENT_V2.md`**
-    
-    - **Role**: Visual and conceptual North Star for B2C aesthetic
-    - **Usage**: Make AISales foundation look and feel like Yeeld
-    - **Key Specs**: `96vw` x `94vh` container, two-column hero, specific implementation details
-3. **`bkash-*.md` files**
-    
-    - **Role**: Definitive bilingual strategy
-    - **Implementation**: Bengali at root (`/`), English at `/en/`
-    - **Features**: Language switcher design, mixed-language branding (e.g., "Koti কোটি")
-4. **`PIXAAI_ANALYSIS.md`**
-    
-    - **Role**: Visual polish inspiration for card components
-    - **Usage**: Apply recommended gradients, shadows, hover effects to Page 3 cards
-5. **Historical Context Files**:
-    
-    - `previous_implementation_conversation_with_prompt.md`
-    - `Framer_motion_scaling_timing_problem_context.md`
-    - **Purpose**: Explains project history, problem genesis, development evolution
-6. **`WaitlistContent.tsx`**
-    
-    - **Role**: Pre-designed component for Task 4
-    - **Usage**: Starting point for Join Waitlist page implementation
+AISales/ & AI Sales Landing Page Component Handling Instructions.md
 
-#### Other Project Folders
+Role: Your MANDATORY technical foundation
+Usage: For any new component, find the closest equivalent in AISales and use its code as starting point
+Contains: 11-category analysis mapping features to code files
 
-- **`/koti-landing-page/`**: Main project repository
-- **GitHub Repository**: Will be provided by user
-- **Note**: Ignore `/created/` folder and other unrelated documents
 
-### Core Development Philosophy
+Yeeld/ & DESIGN_DOCUMENT_V2.md
 
-#### The "11-Category Rule"
+Role: Visual and conceptual North Star for B2C aesthetic
+Usage: Make AISales foundation look and feel like Yeeld
+Key Specs: 96vw x 94vh container, two-column hero, specific implementation details
 
-You are performing a **constrained adaptation** of the AISales project. You may ONLY modify the **"Changeable Trio"**:
 
-1. Content Structure
-2. Layout & Grid
-3. UI Components
+bkash-*.md files
+
+Role: Definitive bilingual strategy
+Implementation: Bengali at root (/), English at /en/
+Features: Language switcher design, mixed-language branding (e.g., "Koti কোটি")
+
+
+PIXAAI_ANALYSIS.md
+
+Role: Visual polish inspiration for card components
+Usage: Apply recommended gradients, shadows, hover effects to Page 3 cards
+
+
+Historical Context Files:
+
+previous_implementation_conversation_with_prompt.md
+Framer_motion_scaling_timing_problem_context.md
+Purpose: Explains project history, problem genesis, development evolution
+
+
+WaitlistContent.tsx
+
+Role: Pre-designed component for waitlist functionality
+Usage: Starting point for Join Waitlist page implementation
+
+
+
+Other Project Folders
+
+/koti-landing-page/: Main project repository
+GitHub Repository: Will be provided by user
+Note: Ignore /created/ folder and other unrelated documents
+
+Core Development Philosophy
+The "11-Category Rule"
+You are performing a constrained adaptation of the AISales project. You may ONLY modify the "Changeable Trio":
+
+Content Structure
+Layout & Grid
+UI Components
 
 The other 8 categories are IMMUTABLE and must not be altered.
+Available Tools
 
-### Available Tools
+GitHub MCP Tool: For repository management and cloning
+Puppeteer MCP Tool: For browser automation, testing, and screenshots
+Playwright MCP Tool: For cross-browser testing and responsive design verification
+WSL Ubuntu Environment: Target development environment
+Brave Search: For researching technical solutions and feasibility analysis
 
-- **GitHub MCP Tool**: For repository management and cloning
-- **Puppeteer MCP Tool**: For browser automation, testing, and screenshots
-- **Playwright MCP Tool**: For cross-browser testing and responsive design verification
-- **WSL Ubuntu Environment**: Target development environment
-- **Brave Search**: For researching technical solutions and feasibility analysis
+THE 3-TASK MISSION: Updated Objectives and Implementation
+Task 1: Create New "About Us & Join Waitlist" Page with Proper Navigation
+Priority: HIGH Estimated Time: 4-6 hours
+Objectives
 
-## THE 4-TASK MISSION: Detailed Objectives and Implementation
+Create a completely separate page (new URL) for "About Us" and "Join Waitlist" sections
+Maintain the same visual style and effects as existing sections
+Include founders, co-founders, and board members information
+Link this new page from the existing landing page navigation
+Ensure header and footer remain visible on the new page
+
+Key Information Requirements
+Before planning this task, you MUST gather:
+
+Names and titles of the founder and co-founder
+Names and titles of board members
+Photos of all team members (if available)
+Specific links on the current landing page that need to be connected
+Preferred URL structure for the new page
+Any specific content or messaging for the "About Us" section
+References from PixAI and other projects mentioned for styling founders/directors
+
+Implementation Approach
+
+Use the existing WaitlistContent.tsx as inspiration for the page design
+Create proper Next.js routing for the new page
+Ensure consistency with existing visual effects and animations
+Fix any existing navigation links that currently lead nowhere
+
+Task 2: Implement Backend for Waitlist Email Capture & Dynamic Survey System
+Priority: HIGH Estimated Time: 6-8 hours
+Objectives
+
+Build backend to capture email addresses from the "Join Waitlist" form
+Store submitted emails for future marketing use
+Send automated predefined emails to users after submission
+Include Google Form survey links in the automated emails
+Implement dynamic form handling that captures new questions added to Google Forms
+Ensure all survey responses are stored in the backend database
+
+Key Information Requirements
+Before planning this task, you MUST gather:
+
+Preferred email service provider and credentials
+Database choice and connection details
+Domain information for sending emails
+Google Form URL and access credentials
+Specific content for the automated email template
+Technical requirements for dynamic form synchronization
+Data storage and privacy compliance requirements
+Any existing Google Forms API integration preferences
+
+Technical Considerations
+
+Research Google Forms API capabilities for dynamic question handling
+Design scalable database schema for storing both emails and survey responses
+Implement robust error handling and data validation
+Consider using serverless functions for email automation
+
+Task 3: Mobile Optimization & Analytics Integration
+Priority: MEDIUM Estimated Time: 3-4 hours
+Objectives
+
+Configure the website to display desktop version on mobile devices
+Integrate Vercel analytics for website traffic monitoring
+Ensure consistent user experience across all device types
+Implement proper analytics tracking for user activity
+
+Key Information Requirements
+Before planning this task, you MUST gather:
+
+Vercel account details and analytics setup requirements
+Specific Vercel packages and configurations needed
+Screenshots or documentation of Vercel analytics setup process
+Any custom analytics tracking requirements
+Performance requirements for mobile devices
+Preferred approach for forcing desktop view on mobile
+
+Implementation Approach
+
+Use Next.js configurations to control viewport and responsive behavior
+Integrate Vercel-specific analytics packages and configurations
+Test across multiple device types and screen sizes
+Document analytics setup and tracking capabilities
+
+Success Criteria and Deliverables
+Per-Task Success Metrics
+
+Task 1: New page accessible via unique URL, proper team information display, functional navigation
+Task 2: Complete email capture and automated survey pipeline with dynamic form handling
+Task 3: Desktop view forced on mobile, comprehensive analytics tracking active
+
+Final Deliverables
+
+Fully functional multi-page website with proper navigation
+Working email capture and survey system with database integration
+Comprehensive analytics tracking via Vercel
+Complete CLAUDE.md documentation with all decisions and implementations
+Clean, maintainable code structure following the 11-Category Rule
+
+Communication and Workflow Protocol
+
+Mandatory Information Gathering: Never proceed to planning without complete information requirements checklist
+Regular Updates: Provide status updates after each major milestone
+Clarification Requests: Ask specific, targeted questions when encountering ambiguities
+Improvement Suggestions: Propose enhancements based on best practices and gathered context
+Decision Documentation: Record all major decisions, gathered information, and rationale in CLAUDE.md
+Iterative Refinement: Be prepared to refine approach based on new findings and user feedback
+
+Initial Action Items
+
+Immediate Response Required:
+
+Confirm understanding of all 3 updated tasks
+Acknowledge CLAUDE.md Protocol requirements with emphasis on information-first approach
+Request GitHub repository link
 
 
-### Task 1: Architecturally Refactor the Animation System
+First Steps After Repository Access:
 
-**Priority**: CRITICAL **Estimated Time**: 4-6 hours
+Create initial CLAUDE.md with complete mission plan
+Begin Task 1 information gathering phase
+Present comprehensive information requirements checklist for Task 1
 
-#### Objectives
 
-- Fix core architectural flaw in scroll animation system
-- Implement robust, scalable, decoupled animation architecture
-- Ensure new pages can be added without breaking existing animations
 
-#### Key Technical Questions to Address
-
-1. Is the single-page-with-components architecture the only way to implement Framer Motion?
-2. Can we implement multiple pages in `/app/` folder with transitions between them?
-3. What causes the timing decoupling issues?
-4. How can we make the animation system modular and maintainable?
-
-#### Detailed Implementation Steps
-
-1. **Deep Analysis Phase**
-    
-    - Study current implementation in:
-        - `src/app/page.tsx`
-        - `src/components/HowItWorksContent2.tsx`
-        - `src/components/BusinessSolutionsContent.tsx`
-    - Review `Framer_motion_scaling_timing_problem_context.md`
-    - Use browser automation to capture detailed behavior patterns
-    - Document all `useScroll` and `useTransform` hook dependencies
-2. **Solution Design** Propose **container-relative animation** solution:
-    
-    - Each section manages its own scroll context
-    - Wrap content in ref-enabled containers
-    - Change `useScroll` and `useTransform` to be container-relative
-    - Remove global page height dependencies
-    - Document proposed changes in CLAUDE.md
-3. **Implementation**
-    
-    - Refactor `BusinessSolutionsContent.tsx`:
-        
-        ```typescript
-        // Example approachconst containerRef = useRef(null);const { scrollYProgress } = useScroll({  target: containerRef,  offset: ["start end", "end start"]});
-        ```
-        
-    - Ensure animations are self-contained
-    - Test each component in isolation
-4. **Integration Testing**
-    
-    - Add `WaitlistContent` component from `reference/WaitlistContent.tsx`
-    - Place in own sticky container with `z-index: 40`
-    - Verify zero negative impact on fixed animations
-    - Document successful decoupling
-5. **Scalability Verification**
-    
-    - Perform full page scroll from Hero to Footer
-    - Record "after" video/screenshots
-    - Demonstrate smooth card stacking
-    - Prove system handles new page additions
-
-### Task 2: Implement Universal Responsive Design
-
-**Priority**: HIGH **Estimated Time**: 3-4 hours
-
-#### Objectives
-
-- Ensure perfect rendering across all devices
-- Fix mobile content cutoff issue
-- Implement responsive design per `DESIGN_DOCUMENT_V2.md` specifications
-
-#### Detailed Implementation Steps
-
-1. **Responsive Design Strategy**
-    
-    - Review `DESIGN_DOCUMENT_V2.md` requirements:
-        - `w-[96vw] h-[94vh]` container specs
-        - Responsive typography scales
-        - Adaptive grid gaps
-    - Plan mobile-first approach
-    - Document strategy in CLAUDE.md
-2. **CSS/Component Refactoring**
-    
-    - Implement responsive containers
-    - Add Tailwind responsive prefixes: `sm:`, `md:`, `lg:`, `xl:`
-    - Ensure Flexbox/Grid structures adapt properly
-    - Fix right-side content cutoff on mobile
-3. **Framer Motion Mobile Optimization**
-    
-    - Adjust animation values for mobile
-    - Ensure smooth performance on lower-powered devices
-    - Consider reducing animation complexity on mobile
-4. **Comprehensive Testing** Using Playwright, test and screenshot:
-    
-    - Mobile: 375px width (iPhone SE)
-    - Tablet: 768px width (iPad)
-    - Desktop: 1440px width (MacBook)
-    - Ultra-wide: 1920px+ width
-    - Document all results in CLAUDE.md
-
-### Task 3: Create and Integrate New Pages
-
-**Priority**: MEDIUM **Estimated Time**: 4-5 hours
-
-#### Objectives
-
-- Add "Join Waitlist" page using provided component
-- Design and implement "People" page for credibility
-- Ensure smooth integration with existing animation flow
-
-#### Detailed Implementation Steps
-
-##### 4.1 Join Waitlist Page
-
-1. **Implementation**
-    
-    - Use `reference/WaitlistContent.tsx` as base
-    - Integrate into `app/page.tsx` after BusinessSolutionsContent
-    - Place in sticky container with `z-index: 40`
-    - Ensure email capture form functionality
-2. **Design Enhancement**
-    
-    - Use Puppeteer to analyze yield.com for inspiration
-    - Implement phone mockup design if referenced
-    - Ensure consistent animation style
-
-##### 4.2 People Page
-
-1. **Design Phase**
-    
-    - Since no pre-existing design exists, propose layout in CLAUDE.md
-    - Consider grid of team members with:
-        - Professional photos
-        - Names and titles in Bengali/English
-        - Brief descriptions
-    - Focus on building trust for Bangladesh market
-2. **Implementation**
-    
-    - Create `PeopleContent.tsx` component
-    - Reuse existing styles and components for consistency
-    - Integrate into `app/page.tsx` with `z-index: 50`
-    - Apply PIXAAI-inspired visual polish
-3. **Responsive Design**
-    
-    - Ensure both pages work perfectly on all devices
-    - Test integration with reformed animation system
-
-### Task 4: Implement Waitlist Backend & Email Pipeline
-
-**Priority**: MEDIUM **Estimated Time**: 6-8 hours
-
-#### Objectives
-
-- Build functional backend for email capture
-- Implement automated email system with survey links
-- Store survey responses in database
-
-#### Detailed Implementation Steps
-
-1. **Feasibility Analysis**
-    
-    - Research if implementation possible with GitHub Pages
-    - If not, explore alternatives:
-        - Vercel/Netlify Functions
-        - Third-party services (EmailJS, Typeform API)
-        - Serverless solutions (AWS Lambda, Cloudflare Workers)
-    - Document findings in CLAUDE.md
-2. **Architecture Design** Propose complete pipeline:
-    
-    ```
-    User submits email → API endpoint → Database storage →
-    → Email service trigger → Survey link sent →
-    → User completes survey → Results stored
-    ```
-    
-3. **Backend Implementation**
-    
-    - Create Next.js API route: `/api/waitlist`
-    - Choose and configure database:
-        - Options: Vercel KV, Supabase, MongoDB Atlas, Airtable
-    - Select email service:
-        - Options: Resend, SendGrid, Mailchimp, EmailJS
-    - Design survey system or integrate third-party
-4. **Frontend Integration**
-    
-    - Wire `WaitlistContent.tsx` form to API
-    - Implement proper error handling
-    - Add loading states and success feedback
-    - Ensure CORS and security considerations
-5. **End-to-End Testing**
-    
-    - Submit test email through UI
-    - Verify database storage
-    - Confirm email delivery
-    - Test survey link functionality
-    - Document entire flow with evidence
-
-## Success Criteria and Deliverables
-
-### Per-Task Success Metrics
-
-1. **Task 1**: Animations work smoothly, new pages don't break system
-2. **Task 2**: Perfect responsive design across all devices
-3. **Task 3**: Two new pages integrated seamlessly
-4. **Task 4**: Functional email pipeline with database integration
-
-### Final Deliverables
-
-- Fully functional, responsive website
-- Comprehensive CLAUDE.md documentation
-- Clean, maintainable code structure
-- Working email capture and survey system
-- Complete testing evidence
-
-## Communication and Workflow Protocol
-
-1. **Regular Updates**: Provide status updates after each major milestone
-2. **Clarification Requests**: Ask specific questions when encountering ambiguities
-3. **Improvement Suggestions**: Propose enhancements based on best practices
-4. **Decision Documentation**: Record all major decisions and rationale in CLAUDE.md
-5. **Iterative Refinement**: Be prepared to refine approach based on findings
-
-## Initial Action Items
-
-1. **Immediate Response Required**:
-    
-    - Confirm understanding of all 5 tasks
-    - Acknowledge CLAUDE.md Protocol requirements
-    - Request GitHub repository link
-2. **First Steps After Repository Access**:
-    
-    - Create initial CLAUDE.md with complete mission plan
-    - Begin Task 1 environment setup
-    - Prepare initial diagnosis report
-
-Remember: This is an iterative, plan-driven process. The CLAUDE.md Protocol is mandatory. Quality, maintainability, and thorough documentation are paramount. Each task builds upon the previous, creating a robust, scalable solution.
-
-Are you ready to begin? Please confirm your understanding of the CLAUDE.md Protocol and provide the GitHub repository link to initiate Task 1.
+Remember: This is an iterative, information-first, plan-driven process. The CLAUDE.md Protocol is mandatory. You must gather ALL necessary information before any planning or execution. Quality, maintainability, and thorough documentation are paramount. Each task builds upon the previous, creating a robust, scalable solution.
 
 ---
+
+## 📊 PROJECT STATUS TRACKER
+
+### Current Phase: Task 1 - Information Gathering
+**Date Started:** 2025-08-03
+**Current Status:** 🔄 Awaiting Information
+
+### ✅ Completed Actions
+1. ✅ Analyzed current project state and requirements
+2. ✅ Created comprehensive todo list for all 3 tasks
+3. ✅ Established CLAUDE.md protocol compliance
+
+### 📝 TASK 1: INFORMATION REQUIREMENTS CHECKLIST
+
+#### Team Information (REQUIRED)
+- [ ] **Founder:** Name and professional title
+- [ ] **Co-founder:** Name and professional title  
+- [ ] **Board Members:** Complete list with names and titles
+- [ ] **Team Photos:** Professional headshots (if available, or placeholder preference)
+- [ ] **Team Bios:** Brief professional descriptions (optional but recommended)
+
+#### Technical Specifications (REQUIRED)
+- [ ] **Page URL Structure:** Preferred route (e.g., `/about`, `/team`, `/about-us`)
+- [ ] **Navigation Links:** List of broken/placeholder links that need fixing
+- [ ] **Content Requirements:** Specific messaging/copy for About Us section
+- [ ] **Design References:** PixAI or other project examples for team member styling
+- [ ] **Language Support:** Should this page support Bengali/English switching?
+
+#### Integration Points (REQUIRED)
+- [ ] **Main Navigation:** Which menu items should link to the new page?
+- [ ] **Footer Links:** Any footer navigation updates needed?
+- [ ] **Call-to-Action:** How should users navigate from About Us to Join Waitlist?
+
+### 🎯 Next Steps
+Once the above information is provided:
+1. Create detailed implementation plan for Task 1
+2. Present plan for approval
+3. Begin implementation following the approved plan
+4. Document all changes in this file
+
+### 📈 Progress Tracking
+- **Task 1:** 0% - Awaiting information
+- **Task 2:** 0% - Not started
+- **Task 3:** 0% - Not started
+
+---
+
+**ACTION REQUIRED:** Please provide the information listed in the checklist above to proceed with Task 1 implementat

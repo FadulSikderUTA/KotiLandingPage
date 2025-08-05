@@ -59,7 +59,7 @@ export default function FinancialEducationCard({
           </p>
         </div>
         <motion.a
-          href="#"
+          href="/about"
           className="text-[#5daa80] font-medium flex items-center gap-1 hover:gap-2 transition-all text-xs group"
           whileHover={{ scale: 1.05 }}
           data-oid="rzb1cvn"

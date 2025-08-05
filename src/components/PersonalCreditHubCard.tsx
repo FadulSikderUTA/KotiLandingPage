@@ -174,7 +174,7 @@ export default function PersonalCreditHubCard({
               </p>
             </motion.div>
             <motion.a
-              href="#"
+              href="/about"
               className="text-[#5daa80] font-medium flex items-center gap-1 hover:gap-2 transition-all text-xs group"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}

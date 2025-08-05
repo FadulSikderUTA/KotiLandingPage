@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { trackPageView, trackLanguageSwitch, trackMobileViewport } from '@/lib/analytics';
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HowItWorksContent2 from "@/components/HowItWorksContent2";
@@ -11,12 +12,72 @@ type Language = "bn" | "en";
 export default function Home() {
   const [lang, setLang] = useState<Language>("en");
 
+  // Track page view and mobile viewport on component mount
+  useEffect(() => {
+    trackPageView('home', lang);
+    
+    // Track mobile viewport usage
+    const isMobile = window.innerWidth <= 1023;
+    if (isMobile) {
+      trackMobileViewport(
+        'mobile',
+        `${window.innerWidth}x${window.innerHeight}`,
+        navigator.userAgent
+      );
+    }
+  }, []);
+
+  // Create enhanced setLang function with analytics
+  const handleLanguageChange = (newLang: Language) => {
+    trackLanguageSwitch(lang, newLang, 'home');
+    setLang(newLang);
+  };
+
+  useEffect(() => {
+    // Handle hash navigation when page loads
+    const handleHashNavigation = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const viewportHeight = window.innerHeight;
+        let targetScroll = 0;
+        
+        switch (hash) {
+          case '#how-it-works':
+            targetScroll = viewportHeight;
+            break;
+          case '#business-solutions':
+            targetScroll = viewportHeight * 2;
+            break;
+          default:
+            targetScroll = 0;
+        }
+        
+        // Delay to ensure page is fully loaded
+        setTimeout(() => {
+          window.scrollTo({
+            top: targetScroll,
+            behavior: 'smooth'
+          });
+        }, 100);
+      }
+    };
+
+    handleHashNavigation();
+    
+    // Also handle hash changes while on the page
+    window.addEventListener('hashchange', handleHashNavigation);
+    
+    return () => {
+      window.removeEventListener('hashchange', handleHashNavigation);
+    };
+  }, []);
+
   return (
     <main
       className="flex min-h-screen flex-col bg-[#fdfdfd]"
       data-oid="ex.hzry"
     >
-      <Header lang={lang} setLang={setLang} data-oid="qdz-pd4" />
+      <Header lang={lang} setLang={handleLanguageChange} data-oid="qdz-pd4" />
 
       {/* Card Stacking Container - Controls the sticky behavior */}
       <div className="relative" data-oid="d4l9uhy">
