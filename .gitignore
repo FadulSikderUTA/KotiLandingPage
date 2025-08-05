@@ -42,3 +42,16 @@ next-env.d.ts
 
 # ClaudPoint checkpoint system
 .checkpoints/
+
+# Claude Code development files (exclude from production deployment)
+CLAUDE.md
+GEMINI.md
+SEO_DEPLOYMENT_CHECKLIST.md
+SETUP_GUIDE.md
+.claude/
+reference/
+database/setup.sql
+
+# Development workspace files
+.vscode/
+.idea/
