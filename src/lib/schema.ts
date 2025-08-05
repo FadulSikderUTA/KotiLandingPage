@@ -44,7 +44,7 @@ export const organizationSchema: WithContext<Organization> = {
       alumniOf: "University of Texas, Arlington"
     }
   ],
-  industry: "Financial Technology",
+  additionalType: "https://schema.org/FinancialService",
   keywords: "credit scoring, financial technology, Bangladesh, AI-powered, credit assessment, financial inclusion",
   knowsAbout: [
     "Credit Scoring",
