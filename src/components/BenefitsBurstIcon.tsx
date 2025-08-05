@@ -133,8 +133,8 @@ const BenefitsBurstIcon = ({
       {[0, 72, 144, 216, 288].map((angle, index) => {
         const rad = (angle * Math.PI) / 180;
         const radius = 28;
-        const cx = 50 + radius * Math.cos(rad);
-        const cy = 50 + radius * Math.sin(rad);
+        const cx = Math.round((50 + radius * Math.cos(rad)) * 100) / 100;
+        const cy = Math.round((50 + radius * Math.sin(rad)) * 100) / 100;
 
         return (
           <circle
