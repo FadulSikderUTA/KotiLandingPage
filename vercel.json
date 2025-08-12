@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/presentation-app", "destination": "https://koti-presentation-app.vercel.app/presentation-app" },
+    { "source": "/presentation-app/:path*", "destination": "https://koti-presentation-app.vercel.app/presentation-app/:path*" }
+  ]
+}
